@@ -18,12 +18,12 @@
 // This is where scripts' loading functions should be declared:
 
 // TeleNPC
-void AddSC_teleNPC_vote();
+void AddSC_tele_npc_vote();
 
 // The name of this function should match:
 // void Add${NameOfDirectory}Scripts()
 void AddCustomScripts()
 {
     // Adding the first attempt at porting telenpc to modern trinity core.
-    AddSC_teleNPC_vote();
+    AddSC_tele_npc_vote();
 }
