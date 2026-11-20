@@ -57,14 +57,14 @@ namespace TeleVote
             return 0;
 
         QueryResult result = CharacterDatabase.PQuery(TELEVOTE_SQL_GUILD_MASK, player->GetGuildId());
-        return result ? (*result)[0].Get<uint32>() : 0;
+        return result ? (*result)[0].GetUInt32() : 0;
     }
 
     bool TryChargeVotePoints(Player* player, uint32 cost)
     {
         uint32 account = player->GetSession()->GetAccountId();
         QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_GET_POINTS, account);
-        if (!result || (*result)[0].Get<uint32>() < cost)
+        if (!result || (*result)[0].GetUInt32() < cost)
             return false;
 
         LoginDatabase.PExecute(TELEVOTE_SQL_SPEND_POINTS, cost, account);
