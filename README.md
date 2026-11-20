@@ -1,97 +1,162 @@
-# ![logo](https://community.trinitycore.org/public/style_images/1_trinitycore.png) TrinityCore (3.3.5)
+<p align="center">
+  <img src="https://i.postimg.cc/tJH96TKb/toplogo.png" alt="World of Immortality">
+</p>
 
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/TrinityCore/TrinityCore.svg)](https://isitmaintained.com/project/TrinityCore/TrinityCore "Average time to resolve an issue") [![Percentage of issues still open](https://isitmaintained.com/badge/open/TrinityCore/TrinityCore.svg)](https://isitmaintained.com/project/TrinityCore/TrinityCore "Percentage of issues still open")
+<h1 align="center">ImmortalCore</h1>
 
---------------
+<p align="center">
+  <strong>The server core behind <em>World of Immortality</em> &mdash; a custom World of Warcraft: Wrath of the Lich King (3.3.5a) private server.</strong>
+</p>
 
+<p align="center">
+  <a href="COPYING"><img src="https://img.shields.io/badge/license-GPL%20v2-blue.svg" alt="License: GPL v2"></a>
+  <img src="https://img.shields.io/badge/client-3.3.5a-orange.svg" alt="Client 3.3.5a">
+  <img src="https://img.shields.io/badge/based%20on-TrinityCore%203.3.5-green.svg" alt="Based on TrinityCore 3.3.5">
+</p>
 
-* [Build Status](#build-status)
-* [Introduction](#introduction)
+---
+
+* [About](#about)
+* [Origin and Base Code](#origin-and-base-code)
+* [Custom Content](#custom-content)
 * [Requirements](#requirements)
-* [Install](#install)
-* [Reporting issues](#reporting-issues)
-* [Submitting fixes](#submitting-fixes)
-* [Copyright](#copyright)
-* [Authors &amp; Contributors](#authors--contributors)
+* [Building and Installing](#building-and-installing)
+* [Reporting Issues](#reporting-issues)
+* [Credits](#credits)
+* [Copyright and License](#copyright-and-license)
+* [Disclaimer](#disclaimer)
 * [Links](#links)
 
+---
 
+## About
 
-## Build Status
+**ImmortalCore** is the emulation core that powers **World of Immortality**, a custom
+private server that has been running in one form or another since 2009. It is an
+open source *MMORPG* server framework written mostly in C++, targeting the
+World of Warcraft 3.3.5a client.
 
-master | 3.3.5 | cata_classic
-:------------: | :------------: | :------------:
-[![master Build Status](https://circleci.com/gh/TrinityCore/TrinityCore/tree/master.svg?style=shield)](https://circleci.com/gh/TrinityCore/TrinityCore/tree/master) | [![3.3.5 Build Status](https://circleci.com/gh/TrinityCore/TrinityCore/tree/3.3.5.svg?style=shield)](https://circleci.com/gh/TrinityCore/TrinityCore/tree/3.3.5) | [![cata_classic Build Status](https://circleci.com/gh/TrinityCore/TrinityCore/tree/cata_classic.svg?style=shield)](https://circleci.com/gh/TrinityCore/TrinityCore/tree/cata_classic)
-[![master Build status](https://ci.appveyor.com/api/projects/status/54d0u1fxe50ad80o/branch/master?svg=true)](https://ci.appveyor.com/project/DDuarte/trinitycore/branch/master) | [![Build status](https://ci.appveyor.com/api/projects/status/54d0u1fxe50ad80o/branch/3.3.5?svg=true)](https://ci.appveyor.com/project/DDuarte/trinitycore/branch/3.3.5) | [![Build status](https://ci.appveyor.com/api/projects/status/54d0u1fxe50ad80o/branch/cata_classic?svg=true)](https://ci.appveyor.com/project/DDuarte/trinitycore/branch/cata_classic)
-[![master Windows Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/win-x64-build.yml/badge.svg?branch=master&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22Windows%20x64%22+branch%3Amaster+event%3Apush) | [![3.3.5 Windows Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/win-x64-build.yml/badge.svg?branch=3.3.5&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22Windows%20x64%22+branch%3A3.3.5+event%3Apush) | [![cata_classic GCC Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/gcc-build.yml/badge.svg?branch=cata_classic&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3AGCC+branch%3Acata_classic+event%3Apush)
-[![master Ubuntu Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/linux-build.yml/badge.svg?branch=master&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22Ubuntu%20x64%22+branch%3Amaster+event%3Apush) | [![3.3.5 Ubuntu Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/linux-build.yml/badge.svg?branch=3.3.5&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22Ubuntu%20x64%22+branch%3A3.3.5+event%3Apush) | [![cata_classic GCC Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/gcc-build.yml/badge.svg?branch=cata_classic&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3AGCC+branch%3Acata_classic+event%3Apush)
-[![master macOS arm64 Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/macos-arm-build.yml/badge.svg?branch=master&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22macOS%20arm64%22+branch%3Amaster+event%3Apush) | [![3.3.5 macOS arm64 Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/macos-arm-build.yml/badge.svg?branch=3.3.5&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22macOS%20arm64%22+branch%3A3.3.5+event%3Apush) | [![cata_classic macOS arm64 Build status](https://github.com/TrinityCore/TrinityCore/actions/workflows/macos-arm-build.yml/badge.svg?branch=cata_classic&event=push)](https://github.com/TrinityCore/TrinityCore/actions?query=workflow%3A%22macOS%20arm64%22+branch%3Acata_classic+event%3Apush)
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/435/badge.svg)](https://scan.coverity.com/projects/435) | [![Coverity Scan Build Status](https://scan.coverity.com/projects/4656/badge.svg)](https://scan.coverity.com/projects/4656) |
+This repository contains the server code, the database structure and the custom
+content that make World of Immortality what it is.
 
-## Introduction
+## Origin and Base Code
 
-TrinityCore is a *MMORPG* Framework based mostly in C++.
+ImmortalCore is built on the shoulders of two projects, and we are grateful to both:
 
-It is derived from *MaNGOS*, the *Massive Network Game Object Server*, and is
-based on the code of that project with extensive changes over time to optimize,
-improve and cleanup the codebase at the same time as improving the in-game
-mechanics and functionality.
+* **[TrinityCore](https://www.trinitycore.org)** &mdash; this code is based on the
+  TrinityCore **3.3.5 branch as of November 18, 2026**.
+* **[MaNGOS](https://www.getmangos.eu)** (the *Massive Network Game Object Server*) &mdash;
+  the project TrinityCore itself was derived from, whose foundations still run through
+  this codebase.
 
-It is completely open source; community involvement is highly encouraged.
+Everything that is not custom to World of Immortality comes from the work of the
+TrinityCore and MaNGOS communities. If you are looking for the stock, general-purpose
+core, please visit the [TrinityCore repository](https://github.com/TrinityCore/TrinityCore).
 
-If you wish to contribute ideas or code, please visit our site linked below or
-make pull requests to our [Github repository](https://github.com/TrinityCore/TrinityCore/pulls).
+## Custom Content
 
-For further information on the TrinityCore project, please visit our project
-website at [TrinityCore.org](https://www.trinitycore.org).
+World of Immortality specific code lives alongside the TrinityCore sources. Custom
+scripts are kept in [`src/server/scripts/Custom`](src/server/scripts/Custom) and are
+registered through `custom_script_loader.cpp`.
+
+Currently documented custom content:
+
+| Feature | Description |
+| :--- | :--- |
+| **Vote Teleporter NPC** (`tele_npc_vote`) | Teleporter and utility NPC. Towns are open to everyone; dungeons, raids, player tools, PvP and the guild house menu are unlocked by voting. Includes talent and pet talent reset, resurrection sickness removal, cooldown reset, a heal option and instance lock reset (paid in vote points). |
+| **Voting system** | Vote status and vote points are read from the `voting_points` table in the **auth** database. |
+| **Guild house support** | Guild ownership of a guild house is read from the `guild_house_masks` table in the **characters** database. |
+
+> More custom content will be documented here as it is ported and added.
 
 ## Requirements
 
+ImmortalCore has the same software requirements as TrinityCore 3.3.5 (a C++ compiler
+with C++20 support, CMake, Boost, OpenSSL and MySQL). The TrinityCore wiki lists the
+exact versions for Windows, Linux and macOS:
 
-Software requirements are available in the [wiki](https://trinitycore.info/en/install/requirements) for
-Windows, Linux and macOS.
+* [TrinityCore requirements](https://trinitycore.info/en/install/requirements)
 
+You will also need a **3.3.5a (build 12340)** World of Warcraft client.
 
-## Install
+## Building and Installing
 
-Detailed installation guides are available in the [wiki](https://trinitycore.info/en/home) for
-Windows, Linux and macOS.
+The build and installation process is the same as for TrinityCore, so the TrinityCore
+guides apply here as well:
 
+* [TrinityCore installation guides](https://trinitycore.info/en/home)
 
-## Reporting issues
+In short:
 
-Issues can be reported via the [Github issue tracker](https://github.com/TrinityCore/TrinityCore/labels/Branch-3.3.5a).
+1. Clone this repository.
+2. Configure and build with CMake.
+3. Create the `auth`, `characters` and `world` databases and apply the SQL from the [`sql`](sql) directory.
+4. Copy `authserver.conf.dist` and `worldserver.conf.dist` to `.conf` files and adjust them.
+5. Extract the client data (maps, vmaps, mmaps, DBC) and place it in your server's data directory.
 
-Please take the time to review existing issues before submitting your own to
-prevent duplicates.
+The custom World of Immortality tables (voting and guild houses) need to exist in the
+databases listed in [Custom Content](#custom-content) before the related features will work.
 
-In addition, thoroughly read through the [issue tracker guide](https://community.trinitycore.org/topic/37-the-trinitycore-issuetracker-and-you/) to ensure
-your report contains the required information. Incorrect or poorly formed
-reports are wasteful and are subject to deletion.
+## Reporting Issues
 
+* Problems with **World of Immortality specific** code or content: please open an issue
+  on this repository's [issue tracker](https://github.com/Lhorath/ImmortalCore/issues).
+* Problems that also exist in stock TrinityCore should be reported to
+  [TrinityCore](https://github.com/TrinityCore/TrinityCore/issues), after reading their
+  [issue tracker guide](https://community.trinitycore.org/topic/37-the-trinitycore-issuetracker-and-you/).
 
-## Submitting fixes
+Please check existing issues first to avoid duplicates, and include as much detail as
+you can (what you did, what you expected, what happened, relevant log output).
 
-C++ fixes are submitted as pull requests via Github. For more information on how to
-properly submit a pull request, read the [how-to: maintain a remote fork](https://community.trinitycore.org/topic/9002-howto-maintain-a-remote-fork-for-pull-requests-tortoisegit/).
-For SQL only fixes, open a ticket; if a bug report exists for the bug, post on an existing ticket.
+## Credits
 
+### World of Immortality
 
-## Copyright
+World of Immortality would not exist without its original developers:
 
-License: GPL 2.0
+* **Sero**
+* **Hellfrost**
+* **Abub**
+* **Brucey**
 
-Read file [COPYING](COPYING).
+Thank you for building the server and its community from the very beginning.
 
+### TrinityCore and MaNGOS
 
-## Authors &amp; Contributors
+* The **[TrinityCore](https://github.com/TrinityCore/TrinityCore)** developers and
+  contributors, whose 3.3.5 branch this project is based on. See the [AUTHORS](AUTHORS) file.
+* The **[MaNGOS](https://www.getmangos.eu)** developers and contributors, whose work
+  TrinityCore and, through it, this project are derived from.
 
-Read file [AUTHORS](AUTHORS).
+### Everyone else
 
+Thanks to the wider emulation community and to every player and staff member who has
+been part of World of Immortality over the years.
+
+## Copyright and License
+
+Copyright &copy; 2009&ndash;2026 **World of Immortality**.
+
+Portions of this software are copyright &copy; the **TrinityCore** and **MaNGOS**
+projects and their respective contributors.
+
+ImmortalCore is derived from TrinityCore and is therefore licensed under the
+**GNU General Public License, version 2** (GPL v2). Read the [COPYING](COPYING) file for
+the full license text and [AUTHORS](AUTHORS) for the list of upstream contributors.
+
+## Disclaimer
+
+World of Immortality and ImmortalCore are fan-made, non-commercial projects. They are
+not affiliated with, endorsed by or sponsored by Blizzard Entertainment, Inc.
+*World of Warcraft* and *Wrath of the Lich King* are trademarks or registered
+trademarks of Blizzard Entertainment, Inc. You must own a legitimate copy of the game
+client to use this software.
 
 ## Links
 
-* [Website](https://www.trinitycore.org)
-* [Wiki](https://www.trinitycore.info)
-* [Forums](https://talk.trinitycore.org/)
-* [Discord](https://discord.trinitycore.org/)
+* [TrinityCore website](https://www.trinitycore.org)
+* [TrinityCore wiki](https://www.trinitycore.info)
+* [TrinityCore repository](https://github.com/TrinityCore/TrinityCore)
+* [MaNGOS](https://www.getmangos.eu)
+
+<!-- Add World of Immortality links here, e.g. website, Discord, forums -->
