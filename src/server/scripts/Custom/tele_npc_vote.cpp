@@ -523,7 +523,7 @@ private:
     }
 };
 
-void AddSC_teleNPC_vote()
+void AddSC_tele_npc_vote()
 {
     // registered under the old name so creature_template.ScriptName stays 'tele_npc_vote'
     new GenericCreatureScript<tele_npc_voteAI>("tele_npc_vote");
