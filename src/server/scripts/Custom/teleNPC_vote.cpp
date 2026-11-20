@@ -7,9 +7,14 @@
  * DB:  creature_template.ScriptName = 'tele_npc_vote'  (unchanged)
  *      npcflag must include gossip (1).
  *
- * !! Three features depended on custom core code that does not exist in stock TrinityCore:
- * !!   Player::HasVoted(), Player::GetGuildHouseMask() and the vote-point cost of the
- * !!   instance reset. They are isolated in namespace TeleVote below - edit the SQL there.
+ * Vote data comes from the `voting_points` table in the auth database (id = account id).
+ * Player::HasVoted() / Player::GetGuildHouseMask() were custom core code that stock
+ * TrinityCore does not have, so they are re-implemented as SQL in namespace TeleVote.
+ * Guild house mask comes from `guild_house_masks` in the characters database
+ * (guid = guild id, phasemask = the guild's phase; > 1 means the guild owns a house).
+ *
+ * NOTE: the old core also applied that phase mask to the player on map 37. This script only
+ * uses it to decide who sees the Guild House menu - it does not set any phase itself.
  */
 
 #include "ScriptMgr.h"
@@ -30,25 +35,38 @@ namespace TeleVote
     constexpr uint32 INSTANCE_RESET_VP_COST = 2;        // vote points
     constexpr uint32 COOLDOWN_RESET_COST    = 1000000;  // copper (100 gold)
 
-    constexpr char const* MSG_NOT_VOTED     = "You have not voted yet. Vote to unlock dungeons, player tools, PvP and the guild house.";
+    // ASSUMPTION: "has voted" = the account's last vote (voting_points.time) is newer than this.
+    // 12h matches the cooldown of most vote sites - change it to match yours.
+    constexpr uint32 VOTE_VALID_SECONDS     = 12 * 3600;
+
+    constexpr char const* MSG_NOT_VOTED      = "You have not voted yet. Vote to unlock dungeons, player tools, PvP and the guild house.";
     constexpr char const* MSG_NO_GUILD_HOUSE = "Your guild does not own a guild house.";
 
-    // ------------------------------------------------------------------------------------
-    // EDIT ME: replace the table/column names with the ones from your vote tables.
-    // They are placeholders - until changed these queries fail (logged as SQL errors) and
-    // the script "fails closed": nobody counts as voted, no guild house, no vote points.
-    // Switch LoginDatabase to CharacterDatabase / WorldDatabase if your tables live there.
-    // If you ported the old Player::HasVoted() etc. into your core, just call them instead.
-    // ------------------------------------------------------------------------------------
-    #define TELEVOTE_SQL_HAS_VOTED    "SELECT 1 FROM `CHANGE_ME_vote_table` WHERE `account` = {} AND `expires` > UNIX_TIMESTAMP() LIMIT 1"
-    #define TELEVOTE_SQL_GET_POINTS   "SELECT `points` FROM `CHANGE_ME_vote_points` WHERE `account` = {}"
-    #define TELEVOTE_SQL_SPEND_POINTS "UPDATE `CHANGE_ME_vote_points` SET `points` = `points` - {} WHERE `account` = {}"
-    #define TELEVOTE_SQL_GUILD_MASK   "SELECT `mask` FROM `CHANGE_ME_guild_house` WHERE `guild` = {}"
+    // voting_points (auth DB): id = account id, points = vote point balance, time = unix time of last vote
+    #define TELEVOTE_SQL_HAS_VOTED    "SELECT 1 FROM `voting_points` WHERE `id` = {} AND `time` > UNIX_TIMESTAMP() - {} LIMIT 1"
+    #define TELEVOTE_SQL_HAS_POINTS   "SELECT 1 FROM `voting_points` WHERE `id` = {} AND `points` >= {} LIMIT 1"
+    #define TELEVOTE_SQL_SPEND_POINTS "UPDATE `voting_points` SET `points` = `points` - {} WHERE `id` = {} AND `points` >= {}"
+
+    // guild_house_masks (characters DB): guid = guild id, phasemask = guild house phase (> 1 = has a house)
+    #define TELEVOTE_SQL_GUILD_MASK   "SELECT `phasemask` FROM `guild_house_masks` WHERE `guid` = {}"
 
     bool HasVoted(Player* player)
     {
-        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_HAS_VOTED, player->GetSession()->GetAccountId());
+        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_HAS_VOTED, player->GetSession()->GetAccountId(), VOTE_VALID_SECONDS);
         return bool(result);
+    }
+
+    bool TryChargeVotePoints(Player* player, uint32 cost)
+    {
+        uint32 account = player->GetSession()->GetAccountId();
+
+        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_HAS_POINTS, account, cost);
+        if (!result)
+            return false;
+
+        // the "points >= cost" guard in the UPDATE keeps the balance from going negative
+        LoginDatabase.PExecute(TELEVOTE_SQL_SPEND_POINTS, cost, account, cost);
+        return true;
     }
 
     uint32 GetGuildHouseMask(Player* player)
@@ -56,19 +74,8 @@ namespace TeleVote
         if (!player->GetGuildId())
             return 0;
 
-        QueryResult result = CharacterDatabase.PQuery(TELEVOTE_SQL_GUILD_MASK, player->GetGuildId());
+        QueryResult result = CharacterDatabase.PQuery(TELEVOTE_SQL_GUILD_MASK, uint32(player->GetGuildId()));
         return result ? (*result)[0].GetUInt32() : 0;
-    }
-
-    bool TryChargeVotePoints(Player* player, uint32 cost)
-    {
-        uint32 account = player->GetSession()->GetAccountId();
-        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_GET_POINTS, account);
-        if (!result || (*result)[0].GetUInt32() < cost)
-            return false;
-
-        LoginDatabase.PExecute(TELEVOTE_SQL_SPEND_POINTS, cost, account);
-        return true;
     }
 }
 
