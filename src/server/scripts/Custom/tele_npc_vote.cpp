@@ -7,7 +7,9 @@
  * DB:  creature_template.ScriptName = 'tele_npc_vote'  (unchanged)
  *      npcflag must include gossip (1).
  *
- * Vote data comes from the `voting_points` table in the auth database (id = account id).
+ * Vote status comes from the `voting` table in the auth database, matched on the player's IP
+ * address (so several accounts on one IP share a vote). Vote points are account bound and
+ * come from the `voting_points` table (id = account id).
  * Player::HasVoted() / Player::GetGuildHouseMask() were custom core code that stock
  * TrinityCore does not have, so they are re-implemented as SQL in namespace TeleVote.
  * Guild house mask comes from `guild_house_masks` in the characters database
@@ -35,15 +37,16 @@ namespace TeleVote
     constexpr uint32 INSTANCE_RESET_VP_COST = 2;        // vote points
     constexpr uint32 COOLDOWN_RESET_COST    = 1000000;  // copper (100 gold)
 
-    // ASSUMPTION: "has voted" = the account's last vote (voting_points.time) is newer than this.
-    // 12h matches the cooldown of most vote sites - change it to match yours.
+    // "has voted" = the last vote from the player's IP address (voting.time) is newer than this.
     constexpr uint32 VOTE_VALID_SECONDS     = 12 * 3600;
 
     constexpr char const* MSG_NOT_VOTED      = "You have not voted yet. Vote to unlock dungeons, player tools, PvP and the guild house.";
     constexpr char const* MSG_NO_GUILD_HOUSE = "Your guild does not own a guild house.";
 
-    // voting_points (auth DB): id = account id, points = vote point balance, time = unix time of last vote
-    #define TELEVOTE_SQL_HAS_VOTED    "SELECT 1 FROM `voting_points` WHERE `id` = {} AND `time` > UNIX_TIMESTAMP() - {} LIMIT 1"
+    // voting (auth DB): user_ip = voter's IP address, time = unix time of that IP's last vote
+    #define TELEVOTE_SQL_HAS_VOTED    "SELECT 1 FROM `voting` WHERE `user_ip` = '{}' AND `time` > UNIX_TIMESTAMP() - {} LIMIT 1"
+
+    // voting_points (auth DB): id = account id, points = vote point balance (account bound)
     #define TELEVOTE_SQL_HAS_POINTS   "SELECT 1 FROM `voting_points` WHERE `id` = {} AND `points` >= {} LIMIT 1"
     #define TELEVOTE_SQL_SPEND_POINTS "UPDATE `voting_points` SET `points` = `points` - {} WHERE `id` = {} AND `points` >= {}"
 
@@ -52,7 +55,11 @@ namespace TeleVote
 
     bool HasVoted(Player* player)
     {
-        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_HAS_VOTED, player->GetSession()->GetAccountId(), VOTE_VALID_SECONDS);
+        // vote status is tied to the IP address, not the account
+        std::string ip = player->GetSession()->GetRemoteAddress();
+        LoginDatabase.EscapeString(ip);
+
+        QueryResult result = LoginDatabase.PQuery(TELEVOTE_SQL_HAS_VOTED, ip, VOTE_VALID_SECONDS);
         return bool(result);
     }
 
