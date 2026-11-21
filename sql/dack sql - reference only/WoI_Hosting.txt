@@ -1,0 +1,6 @@
+srv1846.hstgr.io
+
+WEB DB:
+DB: u971098166_woiweb
+USER: u971098166_websql
+PASS: DackCore2026

@@ -21,18 +21,17 @@
 
 void Trinity::Banner::Show(char const* applicationName, void(*log)(char const* text), void(*logExtraInfo)())
 {
-    log(Trinity::StringFormat("{} ({})", GitRevision::GetFullVersion(), applicationName).c_str());
+log(Trinity::StringFormat("{} ({})", GitRevision::GetFullVersion(), applicationName).c_str());
     log(R"(<Ctrl-C> to stop.)" "\n");
-    log(R"( ______                       __)");
-    log(R"(/\__  _\       __          __/\ \__)");
-    log(R"(\/_/\ \/ _ __ /\_\    ___ /\_\ \, _\  __  __)");
-    log(R"(   \ \ \/\`'__\/\ \ /' _ `\/\ \ \ \/ /\ \/\ \)");
-    log(R"(    \ \ \ \ \/ \ \ \/\ \/\ \ \ \ \ \_\ \ \_\ \)");
-    log(R"(     \ \_\ \_\  \ \_\ \_\ \_\ \_\ \__\\/`____ \)");
-    log(R"(      \/_/\/_/   \/_/\/_/\/_/\/_/\/__/ `/___/> \)");
-    log(R"(                                 C O R E  /\___/)");
-    log(R"(https://TrinityCore.org                   \/__/)" "\n");
-
+    log(R"( ______                                         __               ___)");
+    log(R"(/\__  _\                                       /\ \__           /\_ \)");
+    log(R"(\/_/\ \/     ___ ___     ___ ___     ___   _ __\ \ ,_\    __    \//\ \)");
+    log(R"(   \ \ \   /' __` __`\ /' __` __`\  / __`\/\`'__\ \ \/  /'__`\    \ \ \)");
+    log(R"(    \_\ \__/\ \/\ \/\ \/\ \/\ \/\ \/\ \L\ \ \ \/ \ \ \_/\ \L\.\_   \_\ \_)");
+    log(R"(    /\_____\ \_\ \_\ \_\ \_\ \_\ \_\ \____/\ \_\  \ \__\ \__/.\_\  /\____\)");
+    log(R"(    \/_____/\/_/\/_/\/_/\/_/\/_/\/_/\/___/  \/_/   \/__/\/__/\/_/  \/____/)");
+    log(R"(                                                                   C O R E)");
+    log(R"(https://worldofimmortality.com/)" "\n");
     if (logExtraInfo)
         logExtraInfo();
 }

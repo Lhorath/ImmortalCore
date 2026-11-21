@@ -1,0 +1,2293 @@
+Build started at 2:41 PM...
+1>------ Build started: Project: ZERO_CHECK, Configuration: Release x64 ------
+1>  1>Checking Build System
+2>------ Build started: Project: zlib, Configuration: Release x64 ------
+3>------ Build started: Project: revision.h, Configuration: Release x64 ------
+4>------ Build started: Project: ace, Configuration: Release x64 ------
+5>------ Build started: Project: mpq, Configuration: Release x64 ------
+6>------ Build started: Project: bzip2, Configuration: Release x64 ------
+7>------ Build started: Project: collision, Configuration: Release x64 ------
+2>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/zlib/CMakeLists.txt
+6>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/bzip2/CMakeLists.txt
+5>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/libmpq/CMakeLists.txt
+7>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/collision/CMakeLists.txt
+2>  adler32.c
+3>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/genrev/CMakeLists.txt
+2>  compress.c
+4>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/acelite/ace/CMakeLists.txt
+2>  crc32.c
+2>  deflate.c
+2>  example.c
+2>  infback.c
+6>  blocksort.c
+2>  inffast.c
+2>  inflate.c
+2>  inftrees.c
+7>  collisionPCH.cpp
+2>  trees.c
+2>  uncompr.c
+5>  common.c
+2>  zutil.c
+5>  explode.c
+5>  extract.c
+5>  huffman.c
+5>  mpq.c
+2>  Generating Code...
+6>  bzlib.c
+5>  wave.c
+8>------ Build started: Project: gsoap, Configuration: Release x64 ------
+4>  WinAcePCH.cpp
+8>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/gsoap/CMakeLists.txt
+6>  compress.c
+8>  soapC.cpp
+8>  soapServer.cpp
+8>  stdsoap2.cpp
+6>  crctable.c
+5>  mpq.vcxproj -> F:\ImmortalityCore\BUILD\dep\libmpq\Release\mpq.lib
+6>  decompress.c
+9>------ Build started: Project: scripts, Configuration: Release x64 ------
+6>  huffman.c
+6>  randtable.c
+6>  Generating Code...
+9>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/scripts/CMakeLists.txt
+2>  zlib.vcxproj -> F:\ImmortalityCore\BUILD\dep\zlib\Release\zlib.lib
+7>  VMapFactory.cpp
+7>  VMapManager2.cpp
+7>  MapTree.cpp
+7>  TileAssembler.cpp
+7>  ModelInstance.cpp
+7>  WorldModel.cpp
+7>  BoundingIntervalHierarchy.cpp
+4>  ACE.cpp
+4>  ACE_crc32.cpp
+4>  ACE_crc_ccitt.cpp
+4>  ace_wchar.cpp
+8>  gsoap.vcxproj -> F:\ImmortalityCore\BUILD\dep\gsoap\Release\gsoap.lib
+4>  Activation_Queue.cpp
+4>  Active_Map_Manager.cpp
+4>  Addr.cpp
+4>  Argv_Type_Converter.cpp
+4>  Assert.cpp
+4>  Asynch_IO.cpp
+4>  Asynch_IO_Impl.cpp
+4>  Asynch_Pseudo_Task.cpp
+4>  ATM_Acceptor.cpp
+4>  ATM_Addr.cpp
+4>  ATM_Connector.cpp
+4>  ATM_Params.cpp
+4>  ATM_QoS.cpp
+9>  ScriptPCH.cpp
+4>  ATM_Stream.cpp
+4>  Atomic_Op.cpp
+4>  Atomic_Op_Sparc.c
+4>  Auto_Event.cpp
+4>  Barrier.cpp
+4>  Base_Thread_Adapter.cpp
+4>  Based_Pointer_Repository.cpp
+10>------ Build started: Project: game, Configuration: Release x64 ------
+4>  Basic_Stats.cpp
+4>  Basic_Types.cpp
+4>  Capabilities.cpp
+4>  CDR_Base.cpp
+4>  CDR_Size.cpp
+4>  CDR_Stream.cpp
+4>  Cleanup.cpp
+4>  Codecs.cpp
+4>  Codeset_IBM1047.cpp
+4>  Codeset_Registry.cpp
+4>  Codeset_Registry_db.cpp
+4>  Condition_Recursive_Thread_Mutex.cpp
+4>  Condition_Thread_Mutex.cpp
+11>------ Build started: Project: g3dlib, Configuration: Release x64 ------
+4>  Configuration.cpp
+4>  Configuration_Import_Export.cpp
+4>  Connection_Recycling_Strategy.cpp
+4>  Containers.cpp
+4>  Copy_Disabled.cpp
+4>  Countdown_Time.cpp
+4>  Date_Time.cpp
+4>  DEV.cpp
+10>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/game/CMakeLists.txt
+4>  DEV_Addr.cpp
+4>  DEV_Connector.cpp
+4>  DEV_IO.cpp
+4>  Dev_Poll_Reactor.cpp
+4>  Dirent.cpp
+4>  Dirent_Selector.cpp
+4>  DLL.cpp
+4>  DLL_Manager.cpp
+4>  Dump.cpp
+4>  Dynamic.cpp
+4>  Dynamic_Message_Strategy.cpp
+4>  Dynamic_Service_Base.cpp
+4>  Dynamic_Service_Dependency.cpp
+4>  Encoding_Converter.cpp
+4>  Encoding_Converter_Factory.cpp
+4>  Event.cpp
+4>  Event_Handler.cpp
+4>  FIFO.cpp
+4>  FIFO_Recv.cpp
+4>  FIFO_Recv_Msg.cpp
+4>  FIFO_Send.cpp
+4>  FIFO_Send_Msg.cpp
+4>  FILE.cpp
+4>  FILE_Addr.cpp
+4>  FILE_Connector.cpp
+4>  FILE_IO.cpp
+4>  File_Lock.cpp
+11>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/g3dlite/CMakeLists.txt
+4>  Filecache.cpp
+4>  Flag_Manip.cpp
+4>  Framework_Component.cpp
+4>  Functor.cpp
+4>  Functor_String.cpp
+4>  Get_Opt.cpp
+4>  gethrtime.cpp
+4>  Handle_Ops.cpp
+4>  Handle_Set.cpp
+4>  Hashable.cpp
+4>  High_Res_Timer.cpp
+4>  ICMP_Socket.cpp
+4>  INET_Addr.cpp
+4>  Init_ACE.cpp
+4>  IO_Cntl_Msg.cpp
+10>  gamePCH.cpp
+4>  IO_SAP.cpp
+4>  IOStream.cpp
+4>  IPC_SAP.cpp
+4>  Lib_Find.cpp
+4>  Local_Memory_Pool.cpp
+7>  collision.vcxproj -> F:\ImmortalityCore\BUILD\src\server\collision\Release\collision.lib
+4>  Local_Name_Space.cpp
+4>  Local_Tokens.cpp
+4>  Lock.cpp
+4>  Log_Msg.cpp
+4>  Log_Msg_Backend.cpp
+4>  Log_Msg_Callback.cpp
+4>  Log_Msg_IPC.cpp
+4>  Log_Msg_NT_Event_Log.cpp
+4>  Log_Msg_UNIX_Syslog.cpp
+4>  Log_Record.cpp
+4>  Logging_Strategy.cpp
+4>  LSOCK.cpp
+4>  LSOCK_Acceptor.cpp
+4>  LSOCK_CODgram.cpp
+4>  LSOCK_Connector.cpp
+4>  LSOCK_Dgram.cpp
+4>  LSOCK_Stream.cpp
+4>  Malloc.cpp
+4>  Malloc_Allocator.cpp
+4>  Manual_Event.cpp
+4>  MEM_Acceptor.cpp
+4>  MEM_Addr.cpp
+4>  MEM_Connector.cpp
+4>  MEM_IO.cpp
+4>  Mem_Map.cpp
+4>  MEM_SAP.cpp
+4>  MEM_Stream.cpp
+4>  Message_Block.cpp
+4>  Message_Queue.cpp
+4>  Message_Queue_NT.cpp
+4>  Message_Queue_Vx.cpp
+4>  Method_Request.cpp
+4>  MMAP_Memory_Pool.cpp
+4>  Monitor_Admin.cpp
+4>  Monitor_Admin_Manager.cpp
+4>  Monitor_Base.cpp
+4>  Monitor_Control_Action.cpp
+4>  Monitor_Control_Types.cpp
+4>  Monitor_Point_Registry.cpp
+4>  Monitor_Size.cpp
+4>  Msg_WFMO_Reactor.cpp
+12>------ Build started: Project: libmysql, Configuration: Release x64 ------
+4>  Multihomed_INET_Addr.cpp
+4>  Mutex.cpp
+4>  Name_Proxy.cpp
+4>  Name_Request_Reply.cpp
+6>  bzip2.vcxproj -> F:\ImmortalityCore\BUILD\dep\bzip2\Release\bzip2.lib
+4>  Name_Space.cpp
+4>  Naming_Context.cpp
+4>  Netlink_Addr.cpp
+4>  Notification_Queue.cpp
+4>  Notification_Strategy.cpp
+4>  NT_Service.cpp
+4>  Obchunk.cpp
+4>  Object_Manager.cpp
+4>  Object_Manager_Base.cpp
+4>  OS_Errno.cpp
+4>  OS_Log_Msg_Attributes.cpp
+4>  OS_main.cpp
+4>  OS_NS_arpa_inet.cpp
+4>  OS_NS_ctype.cpp
+4>  OS_NS_dirent.cpp
+4>  OS_NS_dlfcn.cpp
+13>------ Build started: Project: mapextractor, Configuration: Release x64 ------
+4>  OS_NS_errno.cpp
+4>  OS_NS_fcntl.cpp
+4>  OS_NS_math.cpp
+4>  OS_NS_netdb.cpp
+4>  OS_NS_poll.cpp
+4>  OS_NS_pwd.cpp
+4>  OS_NS_regex.cpp
+4>  OS_NS_signal.cpp
+4>  OS_NS_stdio.cpp
+4>  OS_NS_stdlib.cpp
+4>  OS_NS_string.cpp
+4>  OS_NS_strings.cpp
+4>  OS_NS_stropts.cpp
+4>  OS_NS_sys_mman.cpp
+4>  OS_NS_sys_msg.cpp
+4>  OS_NS_sys_resource.cpp
+4>  OS_NS_sys_select.cpp
+4>  OS_NS_sys_sendfile.cpp
+12>  Building Custom Rule F:/GITHUB/WorldOfImmortality/dep/mysqllite/CMakeLists.txt
+4>  OS_NS_sys_shm.cpp
+4>  OS_NS_sys_socket.cpp
+4>  OS_NS_sys_stat.cpp
+4>  OS_NS_sys_time.cpp
+4>  OS_NS_sys_uio.cpp
+11>  AABox.cpp
+11>  Any.cpp
+11>  BinaryFormat.cpp
+4>  OS_NS_sys_utsname.cpp
+4>  OS_NS_sys_wait.cpp
+11>  BinaryInput.cpp
+11>  BinaryOutput.cpp
+11>  Box.cpp
+4>  OS_NS_Thread.cpp
+4>  OS_NS_time.cpp
+4>  OS_NS_unistd.cpp
+4>  OS_NS_wchar.cpp
+4>  OS_QoS.cpp
+4>  OS_Thread_Adapter.cpp
+4>  OS_TLI.cpp
+4>  Pagefile_Memory_Pool.cpp
+4>  Parse_Node.cpp
+4>  PI_Malloc.cpp
+4>  Ping_Socket.cpp
+4>  Pipe.cpp
+4>  POSIX_Asynch_IO.cpp
+4>  POSIX_CB_Proactor.cpp
+4>  POSIX_Proactor.cpp
+4>  Priority_Reactor.cpp
+4>  Proactor.cpp
+4>  Proactor_Impl.cpp
+4>  Process.cpp
+4>  Process_Manager.cpp
+4>  Process_Mutex.cpp
+4>  Process_Semaphore.cpp
+4>  Profile_Timer.cpp
+4>  Reactor.cpp
+11>  Capsule.cpp
+4>  Reactor_Impl.cpp
+11>  CollisionDetection.cpp
+4>  Reactor_Notification_Strategy.cpp
+4>  Reactor_Timer_Interface.cpp
+4>  Read_Buffer.cpp
+4>  Recursive_Thread_Mutex.cpp
+4>  Recyclable.cpp
+4>  Registry.cpp
+4>  Registry_Name_Space.cpp
+4>  Remote_Name_Space.cpp
+4>  Remote_Tokens.cpp
+4>  Rtems_init.c
+13>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/tools/map_extractor/CMakeLists.txt
+4>  RW_Mutex.cpp
+4>  RW_Process_Mutex.cpp
+4>  RW_Thread_Mutex.cpp
+4>  Sample_History.cpp
+4>  Sbrk_Memory_Pool.cpp
+4>  Sched_Params.cpp
+11>  CoordinateFrame.cpp
+4>  Select_Reactor_Base.cpp
+4>  Semaphore.cpp
+11>  Crypto.cpp
+4>  Service_Config.cpp
+4>  Service_Gestalt.cpp
+4>  Service_Manager.cpp
+11>  Cylinder.cpp
+4>  Service_Object.cpp
+4>  Service_Repository.cpp
+4>  Service_Types.cpp
+4>  Shared_Memory.cpp
+4>  Shared_Memory_MM.cpp
+4>  Shared_Memory_Pool.cpp
+4>  Shared_Memory_SV.cpp
+4>  Shared_Object.cpp
+4>  Sig_Adapter.cpp
+4>  Sig_Handler.cpp
+11>  debugAssert.cpp
+11>  FileSystem.cpp
+4>  Signal.cpp
+4>  SOCK.cpp
+4>  SOCK_Acceptor.cpp
+4>  SOCK_CODgram.cpp
+4>  Sock_Connect.cpp
+4>  SOCK_Connector.cpp
+4>  SOCK_Dgram.cpp
+4>  SOCK_Dgram_Bcast.cpp
+4>  SOCK_Dgram_Mcast.cpp
+4>  SOCK_IO.cpp
+12>  get_password.c
+11>  fileutils.cpp
+4>  SOCK_Netlink.cpp
+12>  libmysql.c
+4>  SOCK_SEQPACK_Acceptor.cpp
+12>  errmsg.c
+4>  SOCK_SEQPACK_Association.cpp
+4>  SOCK_SEQPACK_Connector.cpp
+12>  client.c
+4>  SOCK_Stream.cpp
+4>  SPIPE.cpp
+4>  SPIPE_Acceptor.cpp
+4>  SPIPE_Addr.cpp
+12>  my_time.c
+12>  client_plugin.c
+4>  SPIPE_Connector.cpp
+11>  format.cpp
+4>  SPIPE_Stream.cpp
+4>  SString.cpp
+11>  g3dfnmatch.cpp
+11>  g3dmath.cpp
+12>  pack.c
+4>  Stack_Trace.cpp
+11>  Line.cpp
+4>  Stats.cpp
+4>  String_Base_Const.cpp
+4>  SUN_Proactor.cpp
+4>  SV_Message.cpp
+12>  password.c
+4>  SV_Message_Queue.cpp
+4>  SV_Semaphore_Complex.cpp
+4>  SV_Semaphore_Simple.cpp
+4>  SV_Shared_Memory.cpp
+4>  Svc_Conf_Lexer.cpp
+12>  dbug.c
+12>  array.c
+4>  Svc_Conf_y.cpp
+12>  charset-def.c
+12>  charset.c
+12>  checksum.c
+4>  Synch_Options.cpp
+4>  System_Time.cpp
+4>  Task.cpp
+4>  Thread.cpp
+4>  Thread_Adapter.cpp
+12>  default.c
+11>  LineSegment.cpp
+11>  Log.cpp
+4>  Thread_Control.cpp
+4>  Thread_Exit.cpp
+11>  Matrix3.cpp
+12>  errors.c
+4>  Thread_Hook.cpp
+4>  Thread_Manager.cpp
+4>  Thread_Mutex.cpp
+4>  Thread_Semaphore.cpp
+12>  hash.c
+11>  Matrix4.cpp
+4>  Throughput_Stats.cpp
+4>  Time_Value.cpp
+12>  list.c
+12>  md5.c
+4>  Timeprobe.cpp
+4>  TLI.cpp
+11>  MemoryManager.cpp
+12>  mf_cache.c
+12>  mf_dirname.c
+4>  TLI_Acceptor.cpp
+12>  mf_fn_ext.c
+4>  TLI_Connector.cpp
+4>  TLI_Stream.cpp
+4>  Token.cpp
+4>  Token_Collection.cpp
+12>  mf_format.c
+4>  Token_Invariants.cpp
+12>  mf_getdate.c
+12>  mf_iocache.c
+4>  Token_Manager.cpp
+4>  Token_Request_Reply.cpp
+12>  mf_iocache2.c
+4>  TP_Reactor.cpp
+4>  Trace.cpp
+12>  mf_keycache.c
+12>  mf_keycaches.c
+4>  TSS_Adapter.cpp
+4>  TTY_IO.cpp
+4>  UNIX_Addr.cpp
+11>  PhysicsFrame.cpp
+4>  UPIPE_Acceptor.cpp
+12>  mf_loadpath.c
+12>  mf_pack.c
+4>  UPIPE_Connector.cpp
+11>  Plane.cpp
+12>  mf_path.c
+12>  mf_qsort.c
+4>  UPIPE_Stream.cpp
+4>  UTF16_Encoding_Converter.cpp
+4>  UTF32_Encoding_Converter.cpp
+11>  prompt.cpp
+12>  mf_qsort2.c
+4>  UTF8_Encoding_Converter.cpp
+4>  UUID.cpp
+4>  WFMO_Reactor.cpp
+12>  mf_radix.c
+4>  WIN32_Asynch_IO.cpp
+4>  WIN32_Proactor.cpp
+4>  XML_Svc_Conf.cpp
+12>  mf_same.c
+11>  Quat.cpp
+4>  XTI_ATM_Mcast.cpp
+12>  mf_sort.c
+12>  mf_soundex.c
+12>  mf_arr_appstr.c
+12>  mf_tempdir.c
+11>  Random.cpp
+12>  mf_tempfile.c
+13>  System.cpp
+12>  mf_unixpath.c
+13>  adt.cpp
+12>  mf_wcomp.c
+13>  dbcfile.cpp
+13>  loadlib.cpp
+13>  mpq_libmpq.cpp
+12>  mulalloc.c
+11>  Ray.cpp
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/loadlib.cpp')
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9):
+13>      '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+12>  my_access.c
+13>  wdt.cpp
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+9>  spell_shaman.cpp
+12>  my_aes.c
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/mpq_libmpq.cpp')
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9):
+13>      '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+9>  spell_hunter.cpp
+9>  spell_rogue.cpp
+9>  spell_druid.cpp
+9>  spell_dk.cpp
+12>  my_alloc.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+12>  my_bit.c
+10>  AccountMgr.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/loadlib.cpp')
+13>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+13>      the template instantiation context (the oldest one first) is
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+13>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+13>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+13>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+13>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+13>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+12>  my_bitmap.c
+9>  spell_quest.cpp
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+10>  AnticheatData.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/loadlib.cpp')
+10>  AnticheatMgr.cpp
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+12>  my_chsize.c
+10>  AnticheatScripts.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/loadlib.cpp')
+10>  AchievementMgr.cpp
+12>  my_compress.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+10>  AddonMgr.cpp
+12>  my_copy.c
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/loadlib.cpp')
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/System.cpp')
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9):
+13>      '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+9>  spell_warrior.cpp
+9>  spell_generic.cpp
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+12>  my_create.c
+11>  ReferenceCount.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/dbcfile.cpp')
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq04.h(2,9):
+13>      '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+12>  my_delete.c
+12>  my_div.c
+10>  CombatAI.cpp
+12>  my_error.c
+12>  my_file.c
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(224,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+12>  my_fopen.c
+11>  RegistryUtil.cpp
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(224,12):
+13>      consider using '%zu' in the format string
+10>  GameObjectAI.cpp
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(249,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+11>  Sphere.cpp
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(249,12):
+13>      consider using '%zu' in the format string
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(270,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+13>      F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\System.cpp(270,12):
+13>      consider using '%zu' in the format string
+11>  stringutils.cpp
+13>F:\GITHUB\WorldOfImmortality\src\tools\map_extractor\mpq_libmpq.cpp(82,14): warning C4018: '>': signed/unsigned mismatch
+12>  my_fstream.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/mpq_libmpq.cpp')
+13>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+13>      the template instantiation context (the oldest one first) is
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+13>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+13>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+13>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+13>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+13>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+12>  my_gethostbyname.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+11>  System.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/mpq_libmpq.cpp')
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/mpq_libmpq.cpp')
+12>  my_gethwaddr.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/mpq_libmpq.cpp')
+12>  my_getopt.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+10>  GuardAI.cpp
+12>  my_getsystime.c
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/System.cpp')
+13>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+13>      the template instantiation context (the oldest one first) is
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+13>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+13>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+13>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+13>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+13>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+12>  my_getwd.c
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/System.cpp')
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+10>  PassiveAI.cpp
+12>  my_handler.c
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/System.cpp')
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  spell_warlock.cpp
+9>  spell_priest.cpp
+9>  spell_mage.cpp
+9>  spell_paladin.cpp
+12>  my_init.c
+9>  spell_item.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/System.cpp')
+9>  cs_anticheat.cpp
+9>  cs_account.cpp
+9>  cs_achievement.cpp
+9>  cs_gm.cpp
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+11>  TextInput.cpp
+9>  cs_npc.cpp
+9>  cs_go.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/dbcfile.cpp')
+13>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+13>      the template instantiation context (the oldest one first) is
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+13>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+13>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+13>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+13>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+13>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+13>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+13>          with
+13>          [
+13>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+13>          ]
+12>  my_lib.c
+9>  cs_learn.cpp
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/dbcfile.cpp')
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  cs_modify.cpp
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/dbcfile.cpp')
+13>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+13>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/map_extractor/dbcfile.cpp')
+12>  my_lock.c
+9>  cs_debug.cpp
+10>  PetAI.cpp
+12>  my_malloc.c
+11>  TextOutput.cpp
+9>  cs_tele.cpp
+10>  ReactorAI.cpp
+12>  my_mess.c
+14>------ Build started: Project: vmap3extractor, Configuration: Release x64 ------
+12>  my_mkdir.c
+12>  my_mmap.c
+9>  cs_event.cpp
+12>  my_once.c
+11>  Triangle.cpp
+10>  TotemAI.cpp
+9>  cs_gobject.cpp
+12>  my_open.c
+9>  cs_honor.cpp
+9>  cs_wp.cpp
+12>  my_pread.c
+9>  cs_titles.cpp
+9>  cs_quest.cpp
+12>  my_pthread.c
+12>  my_quick.c
+10>  UnitAI.cpp
+9>  cs_reload.cpp
+12>  my_read.c
+12>  my_redel.c
+9>  example_misc.cpp
+9>  example_gossip_codebox.cpp
+10>  CreatureAI.cpp
+12>  my_rename.c
+11>  uint128.cpp
+4>     Creating library F:/ImmortalityCore/BUILD/dep/acelite/ace/Release/ace.lib and object F:/ImmortalityCore/BUILD/dep/acelite/ace/Release/ace.exp
+9>  example_escort.cpp
+12>  my_seek.c
+9>  example_creature.cpp
+12>  my_sleep.c
+9>  example_spell.cpp
+12>  my_static.c
+12>  my_symlink.c
+9>  example_commandscript.cpp
+11>  UprightFrame.cpp
+12>  my_symlink2.c
+9>  ScriptedEscortAI.cpp
+11>  Vector2.cpp
+9>  ScriptedCreature.cpp
+11>  Vector3.cpp
+10>  CreatureAIRegistry.cpp
+9>  ScriptedFollowerAI.cpp
+12>  my_sync.c
+12>  my_thr_init.c
+10>  CreatureAISelector.cpp
+9>  ScriptedSimpleAI.cpp
+12>  my_write.c
+12>  ptr_cmp.c
+12>  queues.c
+10>  CreatureEventAI.cpp
+10>  CreatureEventAIMgr.cpp
+9>  achievement_scripts.cpp
+12>  stacktrace.c
+9>  areatrigger_scripts.cpp
+11>  Vector4.cpp
+9>  boss_emeriss.cpp
+9>  boss_lethon.cpp
+12>  rijndael.c
+12>  sha1.c
+9>  boss_taerar.cpp
+9>  boss_ysondre.cpp
+9>  chat_log.cpp
+12>  string.c
+12>  thr_alarm.c
+10>  ScriptedCreature.cpp
+12>  thr_lock.c
+10>  ScriptedEscortAI.cpp
+9>  go_scripts.cpp
+12>  thr_mutex.c
+9>  guards.cpp
+9>  item_scripts.cpp
+9>  mob_generic_creature.cpp
+9>  npc_innkeeper.cpp
+9>  npc_professions.cpp
+10>  ScriptedFollowerAI.cpp
+12>  thr_rwlock.c
+9>  npc_taxi.cpp
+12>  tree.c
+9>  npcs_special.cpp
+12>  typelib.c
+9>  OutdoorPvPTF.cpp
+12>  base64.c
+9>  OutdoorPvPSI.cpp
+12>  my_memmem.c
+9>  OutdoorPvPZM.cpp
+9>  OutdoorPvPNA.cpp
+12>  my_getpagesize.c
+10>  ScriptedSimpleAI.cpp
+10>  SmartAI.cpp
+4>  ace.vcxproj -> F:\ImmortalityCore\BUILD\bin\Release\ace.dll
+12>  lf_alloc-pin.c
+12>  lf_dynarray.c
+12>  lf_hash.c
+12>  my_atomic.c
+12>  my_getncpus.c
+12>  my_rdtsc.c
+9>  OutdoorPvPHP.cpp
+9>  OutdoorPvPEP.cpp
+9>  ghostlands.cpp
+9>  eversong_woods.cpp
+14>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/CMakeLists.txt
+15>------ Build started: Project: shared, Configuration: Release x64 ------
+9>  boss_galvangar.cpp
+12>  my_winthread.c
+12>  my_wincond.c
+12>  my_winerr.c
+9>  boss_balinda.cpp
+12>  my_winfile.c
+12>  my_windac.c
+9>  boss_drekthar.cpp
+12>  my_conio.c
+9>  boss_vanndar.cpp
+9>  alterac_valley.cpp
+12>  bchange.c
+9>  boss_the_ravenian.cpp
+12>  bmove_upp.c
+9>  boss_instructor_malicia.cpp
+9>  boss_death_knight_darkreaver.cpp
+9>  boss_illucia_barov.cpp
+9>  boss_vectus.cpp
+12>  ctype-big5.c
+12>  ctype-bin.c
+9>  boss_jandice_barov.cpp
+12>  ctype-cp932.c
+10>  SmartScript.cpp
+9>  boss_kormok.cpp
+10>  SmartScriptMgr.cpp
+9>  boss_lord_alexei_barov.cpp
+9>  boss_doctor_theolen_krastinov.cpp
+9>  boss_darkmaster_gandling.cpp
+9>  instance_scholomance.cpp
+12>  ctype-czech.c
+12>  ctype-euc_kr.c
+9>  boss_lorekeeper_polkelt.cpp
+9>  boss_ras_frostwhisper.cpp
+9>  isle_of_queldanas.cpp
+12>  ctype-extra.c
+9>  boss_kruul.cpp
+12>  ctype-gb2312.c
+9>  searing_gorge.cpp
+10>  AuctionHouseMgr.cpp
+9>  boss_hakkar.cpp
+12>  ctype-gbk.c
+9>  boss_mandokir.cpp
+12>  ctype-latin1.c
+9>  boss_marli.cpp
+9>  boss_hazzarah.cpp
+9>  boss_jeklik.cpp
+9>  boss_grilek.cpp
+9>  boss_renataki.cpp
+12>  ctype-mb.c
+12>  ctype-simple.c
+10>  ArenaTeam.cpp
+10>  Battleground.cpp
+9>  boss_arlokk.cpp
+9>  boss_gahzranka.cpp
+9>  boss_venoxis.cpp
+12>  ctype-tis620.c
+9>  instance_zulgurub.cpp
+9>  boss_jindo.cpp
+9>  boss_wushoolay.cpp
+12>  ctype-uca.c
+12>  ctype-ucs2.c
+10>  BattlegroundMgr.cpp
+9>  boss_thekal.cpp
+15>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/shared/CMakeLists.txt
+12>  ctype-utf8.c
+9>  wetlands.cpp
+12>  ctype-win1250ch.c
+9>  arathi_highlands.cpp
+12>  ctype.c
+9>  instance_gnomeregan.cpp
+9>  gnomeregan.cpp
+12>  decimal.c
+9>  redridge_mountains.cpp
+10>  BattlegroundQueue.cpp
+9>  boss_high_interrogator_gerstahn.cpp
+10>  BattlegroundAA.cpp
+12>  dtoa.c
+9>  boss_gorosh_the_dervish.cpp
+9>  blackrock_depths.cpp
+9>  boss_anubshiah.cpp
+12>  int2str.c
+12>  is_prefix.c
+9>  boss_tomb_of_seven.cpp
+12>  llstr.c
+9>  boss_general_angerforge.cpp
+9>  boss_grizzle.cpp
+12>  longlong2str.c
+10>  BattlegroundAB.cpp
+9>  boss_ambassador_flamelash.cpp
+9>  instance_blackrock_depths.cpp
+9>  boss_moira_bronzebeard.cpp
+10>  BattlegroundAV.cpp
+9>  boss_emperor_dagran_thaurissan.cpp
+12>  my_strtoll10.c
+9>  boss_magmus.cpp
+12>  my_vsnprintf.c
+11>  g3dlib.vcxproj -> F:\ImmortalityCore\BUILD\dep\g3dlite\Release\g3dlib.lib
+9>  ironforge.cpp
+9>  chapter2.cpp
+9>  chapter5.cpp
+12>  str2int.c
+12>  str_alloc.c
+12>  strcend.c
+9>  chapter1.cpp
+9>  the_scarlet_enclave.cpp
+9>  eastern_plaguelands.cpp
+12>  strend.c
+10>  BattlegroundBE.cpp
+9>  boss_gehennas.cpp
+12>  strfill.c
+12>  strmake.c
+9>  boss_lucifron.cpp
+12>  strmov.c
+9>  boss_golemagg.cpp
+9>  boss_majordomo_executus.cpp
+12>  strnmov.c
+10>  BattlegroundDS.cpp
+12>  strxmov.c
+9>  boss_baron_geddon.cpp
+10>  BattlegroundEY.cpp
+12>  strxnmov.c
+9>  boss_ragnaros.cpp
+9>  boss_garr.cpp
+12>  xml.c
+12>  my_strchr.c
+9>  instance_molten_core.cpp
+10>  BattlegroundIC.cpp
+10>  BattlegroundNA.cpp
+12>  strcont.c
+12>  strappend.c
+10>  BattlegroundRB.cpp
+12>  vio.c
+9>  boss_sulfuron_harbinger.cpp
+12>  viosocket.c
+10>  BattlegroundRL.cpp
+9>  boss_magmadar.cpp
+12>  viossl.c
+9>  molten_core.cpp
+10>  BattlegroundRV.cpp
+12>  viosslfactories.c
+10>  BattlegroundSA.cpp
+9>  boss_shazzrah.cpp
+10>  BattlegroundWS.cpp
+9>  boss_baroness_anastari.cpp
+9>  boss_nerubenkan.cpp
+10>  Calendar.cpp
+9>  instance_stratholme.cpp
+9>  boss_dathrohan_balnazzar.cpp
+10>  Channel.cpp
+9>  boss_timmy_the_cruel.cpp
+9>  boss_baron_rivendare.cpp
+10>  ChannelMgr.cpp
+10>  Chat.cpp
+9>  boss_magistrate_barthilas.cpp
+9>  boss_order_of_silver_hand.cpp
+10>  Debugcmds.cpp
+9>  boss_ramstein_the_gorger.cpp
+9>  boss_cannon_master_willey.cpp
+10>  Level0.cpp
+15>  sharedPCH.cpp
+9>  boss_maleki_the_pallid.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+9>  boss_postmaster_malown.cpp
+9>  stratholme.cpp
+9>  tirisfal_glades.cpp
+9>  sunken_temple.cpp
+10>  Level1.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+10>  Level2.cpp
+9>  instance_sunken_temple.cpp
+9>  boss_felblood_kaelthas.cpp
+10>  Level3.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+9>  boss_priestess_delrissa.cpp
+9>  instance_magisters_terrace.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+9>  boss_selin_fireheart.cpp
+14>  adtfile.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+9>  boss_vexallus.cpp
+9>  magisters_terrace.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+14>  dbcfile.cpp
+9>  uldaman.cpp
+9>  boss_ironaya.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+9>  instance_uldaman.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+9>  boss_archaedas.cpp
+9>  swamp_of_sorrows.cpp
+9>  boss_pyroguard_emberseer.cpp
+9>  boss_drakkisath.cpp
+9>  boss_warmaster_voone.cpp
+14>  model.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+14>  mpq_libmpq.cpp
+10>  TicketCommands.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+10>  HostileRefManager.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+9>  boss_mother_smolderweb.cpp
+9>  boss_quartermaster_zigris.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+9>  boss_halycon.cpp
+9>  boss_overlord_wyrmthalak.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+10>  ThreatManager.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+9>  boss_shadow_hunter_voshgajin.cpp
+9>  boss_gyth.cpp
+9>  boss_rend_blackhand.cpp
+9>  boss_highlord_omokk.cpp
+9>  boss_the_beast.cpp
+9>  boss_eredar_twins.cpp
+14>  vmapexport.cpp
+10>  ConditionMgr.cpp
+14>cl : command line  warning D9002: ignoring unknown option '-ggdb'
+14>cl : command line  warning D9002: ignoring unknown option '-O3'
+14>  wdtfile.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+9>  boss_kiljaeden.cpp
+10>  DisableMgr.cpp
+9>  boss_muru.cpp
+9>  instance_sunwell_plateau.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+16>------ Build started: Project: vmap3assembler, Configuration: Release x64 ------
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(28,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::ok'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(35,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::outfilename'
+9>  boss_kalecgos.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(46,13): warning C4820: 'ModelInstance': '4' bytes padding added after data member 'ModelInstance::sc'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(42,10): warning C4820: 'WMORoot': '7' bytes padding added after data member 'WMORoot::outfilename'
+9>  boss_brutallus.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(51,11): warning C4820: 'WMOLiquidHeader': '2' bytes padding added after data member 'WMOLiquidHeader::type'
+9>  sunwell_plateau.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(87,12): warning C4820: 'WMOGroup': '4' bytes padding added after data member 'WMOGroup::liquflags'
+9>  boss_felmyst.cpp
+12>  net_serv.cc
+9>  stranglethorn_vale.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(97,10): warning C4820: 'WMOGroup': '7' bytes padding added after data member 'WMOGroup::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(111,9): warning C4820: 'WMOInstance': '4' bytes padding added after data member 'WMOInstance::doodadset'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  deadmines.cpp
+9>  boss_mr_smite.cpp
+9>  instance_deadmines.cpp
+10>  DBCStores.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  duskwood.cpp
+10>  LFGGroupData.cpp
+10>  LFGMgr.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+9>  boss_azshir_the_sleepless.cpp
+9>  boss_mograine_and_whitemane.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  boss_bloodmage_thalnos.cpp
+10>  LFGPlayerData.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  boss_interrogator_vishas.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  boss_headless_horseman.cpp
+9>  instance_scarlet_monastery.cpp
+9>  boss_houndmaster_loksey.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(30,30): warning C4365: 'argument': conversion from 'uint32' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(38,30): warning C4365: 'argument': conversion from 'uint32' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(52,39): warning C4458: declaration of 'outfilename' hides class member
+14>      F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(35,10):
+14>      see declaration of 'Model::outfilename'
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(73,30): warning C4365: '=': conversion from 'size_t' to 'int', signed/unsigned mismatch
+9>  boss_high_inquisitor_fairbanks.cpp
+9>  boss_arcanist_doan.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(80,28): warning C4365: '=': conversion from 'size_t' to 'int', signed/unsigned mismatch
+9>  boss_herod.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(88,25): warning C4365: '=': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.cpp(134,10): warning C5219: implicit conversion from 'unsigned int' to 'float', possible loss of data
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  boss_scorn.cpp
+9>  dun_morogh.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  undercity.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+9>  silvermoon_city.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  loch_modan.cpp
+9>  shadowfang_keep.cpp
+9>  instance_shadowfang_keep.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/model.cpp')
+14>  wmo.cpp
+9>  burning_steppes.cpp
+9>  boss_chromaggus.cpp
+9>  boss_razorgore.cpp
+9>  boss_firemaw.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\dbcfile.h(29,6): warning C5267: definition of implicit assignment operator for 'DBCFile' is deprecated because it has a user-provided destructor
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>      F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\dbcfile.h(64,18):
+14>      implicit assignment operator for 'DBCFile' first required here
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+9>  boss_broodlord_lashlayer.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+9>  boss_ebonroc.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+9>  instance_blackwing_lair.cpp
+9>  boss_vaelastrasz.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+9>  boss_nefarian.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+9>  boss_flamegor.cpp
+9>  boss_victor_nefarius.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+10>  LFGScripts.cpp
+10>  Corpse.cpp
+9>  blasted_lands.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq.cpp(65,27): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+9>  elwynn_forest.cpp
+9>  stormwind_city.cpp
+16>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/tools/vmap3_assembler/CMakeLists.txt
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq.cpp(82,14): warning C4018: '>': signed/unsigned mismatch
+9>  boss_halazzi.cpp
+15>  Config.cpp
+9>  boss_hexlord.cpp
+15>  ARC4.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq.cpp(83,22): warning C4365: '=': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq.cpp(89,15): warning C4365: '=': conversion from 'size_t' to 'libmpq__off_t', signed/unsigned mismatch
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+15>  AuthCrypt.cpp
+9>  boss_zuljin.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  boss_akilzon.cpp
+9>  instance_zulaman.cpp
+15>  BigNumber.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+9>  boss_janalai.cpp
+10>  Creature.cpp
+15>  HMACSHA1.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/mpq_libmpq.cpp')
+10>  CreatureGroups.cpp
+15>  SHA1.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/dbcfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(42,10): warning C4820: 'WMORoot': '7' bytes padding added after data member 'WMORoot::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(51,11): warning C4820: 'WMOLiquidHeader': '2' bytes padding added after data member 'WMOLiquidHeader::type'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(87,12): warning C4820: 'WMOGroup': '4' bytes padding added after data member 'WMOGroup::liquflags'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(97,10): warning C4820: 'WMOGroup': '7' bytes padding added after data member 'WMOGroup::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(111,9): warning C4820: 'WMOInstance': '4' bytes padding added after data member 'WMOInstance::doodadset'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(28,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::ok'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(35,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(46,13): warning C4820: 'ModelInstance': '4' bytes padding added after data member 'ModelInstance::sc'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(43,12): warning C4820: '<unnamed-tag>': '2' bytes padding added after data member '<unnamed-tag>::area_id'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(46,11): warning C4820: '<unnamed-tag>': '7' bytes padding added after data member '<unnamed-tag>::flag'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4625: 'ADTFile': copy constructor was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4626: 'ADTFile': assignment operator was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.cpp(194,18): warning C4365: 'argument': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(42,10): warning C4820: 'WMORoot': '7' bytes padding added after data member 'WMORoot::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(51,11): warning C4820: 'WMOLiquidHeader': '2' bytes padding added after data member 'WMOLiquidHeader::type'
+15>  AdhocStatement.cpp
+9>  boss_nalorakk.cpp
+15>  DatabaseWorker.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(87,12): warning C4820: 'WMOGroup': '4' bytes padding added after data member 'WMOGroup::liquflags'
+9>  zulaman.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+15>  Field.cpp
+9>  hinterlands.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(97,10): warning C4820: 'WMOGroup': '7' bytes padding added after data member 'WMOGroup::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+15>  CharacterDatabase.cpp
+15>  LoginDatabase.cpp
+15>  WorldDatabase.cpp
+9>  western_plaguelands.cpp
+9>  alterac_mountains.cpp
+9>  westfall.cpp
+15>  MySQLConnection.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(111,9): warning C4820: 'WMOInstance': '4' bytes padding added after data member 'WMOInstance::doodadset'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wdtfile.h(11,7): warning C4625: 'WDTFile': copy constructor was implicitly defined as deleted
+9>  silverpine_forest.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+10>  GossipDef.cpp
+9>  instance_karazhan.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wdtfile.h(11,7): warning C4626: 'WDTFile': assignment operator was implicitly defined as deleted
+9>  boss_nightbane.cpp
+9>  karazhan.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+15>  PreparedStatement.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(28,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::ok'
+9>  boss_curator.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(35,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(46,13): warning C4820: 'ModelInstance': '4' bytes padding added after data member 'ModelInstance::sc'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(43,12): warning C4820: '<unnamed-tag>': '2' bytes padding added after data member '<unnamed-tag>::area_id'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(46,11): warning C4820: '<unnamed-tag>': '7' bytes padding added after data member '<unnamed-tag>::flag'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4625: 'ADTFile': copy constructor was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4626: 'ADTFile': assignment operator was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\algorithm(4248,24): warning C4242: '=': conversion from 'int' to 'char', possible loss of data
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\algorithm(4248,24):
+14>      the template instantiation context (the oldest one first) is
+14>          F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.cpp(118,26):
+14>          see reference to function template instantiation '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
+14>          with
+14>          [
+14>              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+14>              _Elem=char,
+14>              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+14>              _Fn=int (__cdecl *)(int)
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+10>  TemporarySummon.cpp
+9>  boss_shade_of_aran.cpp
+15>  QueryHolder.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+9>  boss_netherspite.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  boss_maiden_of_virtue.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+9>  boss_midnight.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  boss_prince_malchezaar.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+9>  bosses_opera.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+15>  QueryResult.cpp
+9>  boss_moroes.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wdtfile.cpp')
+15>  SQLStorage.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  boss_terestian_illhoof.cpp
+15>  Transaction.cpp
+10>  DynamicObject.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+9>  stonetalon_mountains.cpp
+10>  GameObject.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+15>  DBCFileLoader.cpp
+9>  silithus.cpp
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+12>     Creating library F:/ImmortalityCore/BUILD/dep/mysqllite/Release/libmysql.lib and object F:/ImmortalityCore/BUILD/dep/mysqllite/Release/libmysql.exp
+9>  moonglade.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/adtfile.cpp')
+15>  Log.cpp
+9>  razorfen_downs.cpp
+15>  DelayExecutor.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winbase.h(7965,5): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+10>  Bag.cpp
+9>  instance_razorfen_downs.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+15>  Threading.cpp
+9>  boss_amnennar_the_coldbringer.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2806,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_OUTPUT_TECHNOLOGY_OTHER>' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2826,5):
+14>      'DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL': this enumerator requires the type
+9>  zulfarrak.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2831,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_SCANLINE_ORDERING_UNSPECIFIED>' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2837,5):
+14>      'DISPLAYCONFIG_SCANLINE_ORDERING_FORCE_UINT32': this enumerator requires the type
+15>  EventProcessor.cpp
+9>  instance_zulfarrak.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2874,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_SCALING_IDENTITY>' will change when '/Zc:enumTypes' is specified on the command line
+15>  ServiceWin32.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2881,5):
+14>      'DISPLAYCONFIG_SCALING_FORCE_UINT32': this enumerator requires the type
+9>  boss_epoch_hunter.cpp
+10>  Item.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2885,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_ROTATION_IDENTITY>' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2890,5):
+14>      'DISPLAYCONFIG_ROTATION_FORCE_UINT32': this enumerator requires the type
+15>  Util.cpp
+9>  boss_leutenant_drake.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2894,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE>' will change when '/Zc:enumTypes' is specified on the command line
+15>  Common.cpp
+9>  old_hillsbrad.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2898,5):
+14>      'DISPLAYCONFIG_MODE_INFO_TYPE_FORCE_UINT32': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2902,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_PIXELFORMAT_8BPP>' will change when '/Zc:enumTypes' is specified on the command line
+9>  instance_old_hillsbrad.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(2908,5):
+14>      'DISPLAYCONFIG_PIXELFORMAT_FORCE_UINT32': this enumerator requires the type
+9>  boss_captain_skarloc.cpp
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3022,14): warning C4865: the underlying type of 'DISPLAYCONFIG_TOPOLOGY_ID' will change when '/Zc:enumTypes' is specified on the command line
+9>  boss_archimonde.cpp
+9>  boss_kazrogal.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3028,5):
+14>      'DISPLAYCONFIG_TOPOLOGY_FORCE_UINT32': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3033,1): warning C4865: the underlying type of '<unnamed-enum-DISPLAYCONFIG_DEVICE_INFO_GET_SOURCE_NAME>' will change when '/Zc:enumTypes' is specified on the command line
+9>  hyjal_trash.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3052,7):
+14>      'DISPLAYCONFIG_DEVICE_INFO_FORCE_UINT32': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3157,14): warning C4865: the underlying type of '_DISPLAYCONFIG_COLOR_ENCODING' will change when '/Zc:enumTypes' is specified on the command line
+9>  hyjal.cpp
+9>  hyjalAI.cpp
+9>  instance_hyjal.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\wingdi.h(3164,5):
+14>      'DISPLAYCONFIG_COLOR_ENCODING_FORCE_UINT32': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(6872,14): warning C4865: the underlying type of 'tagFEEDBACK_TYPE' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(6884,5):
+14>      'FEEDBACK_MAX': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(15519,14): warning C4865: the underlying type of 'tagPOINTER_DEVICE_TYPE' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(15526,5):
+14>      'POINTER_DEVICE_TYPE_MAX': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(15550,14): warning C4865: the underlying type of 'tagPOINTER_DEVICE_CURSOR_TYPE' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winuser.h(15554,5):
+14>      'POINTER_DEVICE_CURSOR_TYPE_MAX': this enumerator requires the type
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(42,10): warning C4820: 'WMORoot': '7' bytes padding added after data member 'WMORoot::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(51,11): warning C4820: 'WMOLiquidHeader': '2' bytes padding added after data member 'WMOLiquidHeader::type'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(87,12): warning C4820: 'WMOGroup': '4' bytes padding added after data member 'WMOGroup::liquflags'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(97,10): warning C4820: 'WMOGroup': '7' bytes padding added after data member 'WMOGroup::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(111,9): warning C4820: 'WMOInstance': '4' bytes padding added after data member 'WMOInstance::doodadset'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+9>  boss_rage_winterchill.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+9>  boss_azgalor.cpp
+12>client.obj : error LNK2019: unresolved external symbol SSL_get1_peer_certificate referenced in function ssl_verify_server_cert
+9>  boss_anetheron.cpp
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+12>viossl.obj : error LNK2001: unresolved external symbol SSL_get1_peer_certificate
+12>viosslfactories.obj : error LNK2019: unresolved external symbol OPENSSL_init_crypto referenced in function check_ssl_init
+9>  boss_infinite.cpp
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(121,45): warning C5038: data member 'WMOGroup::filename' will be initialized after data member 'WMOGroup::MOPY'
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(170,25): warning C4365: '=': conversion from 'uint32' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(183,35): warning C4365: '=': conversion from 'int' to 'unsigned int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(194,29): warning C4365: '=': conversion from 'uint32' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(202,63): warning C4365: '=': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(203,52): warning C4365: 'initializing': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(204,28): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(206,34): warning C4365: 'initializing': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(207,31): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(238,36): warning C4365: 'initializing': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(246,25): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(249,24): warning C4365: 'initializing': conversion from 'int' to 'uint32', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(256,19): warning C4365: 'initializing': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(281,29): warning C4365: '=': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(309,36): warning C4365: 'initializing': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(318,25): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(323,39): warning C4365: 'initializing': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(356,45): warning C4242: '=': conversion from 'int' to 'uint16', possible loss of data
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(356,45): warning C4365: '=': conversion from 'int' to 'uint16', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(362,38): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(365,63): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(365,63): warning C4365: 'initializing': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(381,75): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(381,75): warning C4365: 'initializing': conversion from 'size_t' to 'int', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(393,40): warning C4365: '=': conversion from 'uint16' to 'short', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.cpp(405,41): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\wtypesbase.h(367,6): warning C4865: the underlying type of 'tagCLSCTX' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\wtypesbase.h(398,9):
+14>      'CLSCTX_PS_DLL': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(2200,23): warning C4668: 'NTDDI_WIN11_DT' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/wmo.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11493,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11499,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11504,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11509,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11516,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11537,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11543,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11551,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11555,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11559,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(11564,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(16897,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(17046,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(17059,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winioctl.h(17288,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\objidlbase.h(7906,6): warning C4865: the underlying type of 'CO_MARSHALING_CONTEXT_ATTRIBUTES' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\objidlbase.h(7909,9):
+14>      'CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_1': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\urlmon.h(1362,6): warning C4865: the underlying type of '__MIDL_IBindStatusCallback_0003' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\urlmon.h(1388,9):
+14>      'BINDF_RESERVED_2': this enumerator requires the type
+14>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\urlmon.h(1806,6): warning C4865: the underlying type of '__MIDL_IBindStatusCallbackEx_0001' will change when '/Zc:enumTypes' is specified on the command line
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\urlmon.h(1838,9):
+14>      'BINDF2_RESERVED_1': this enumerator requires the type
+12>viosslfactories.obj : error LNK2019: unresolved external symbol DH_set0_pqg referenced in function get_dh512
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(47,13): warning C4820: 'FileLoader': '4' bytes padding added after data member 'FileLoader::data_size'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\loadlib\loadlib.h(55,6): warning C4265: 'FileLoader': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(29,33): warning C4365: 'initializing': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(55,10): warning C4820: 'MPQFile': '7' bytes padding added after data member 'MPQFile::eof'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(60,28): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(61,35): warning C4100: 'f': unreferenced parameter
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(67,31): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\mpq_libmpq04.h(68,30): warning C4365: 'return': conversion from 'libmpq__off_t' to 'size_t', signed/unsigned mismatch
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(42,10): warning C4820: 'WMORoot': '7' bytes padding added after data member 'WMORoot::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(51,11): warning C4820: 'WMOLiquidHeader': '2' bytes padding added after data member 'WMOLiquidHeader::type'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(87,12): warning C4820: 'WMOGroup': '4' bytes padding added after data member 'WMOGroup::liquflags'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(97,10): warning C4820: 'WMOGroup': '7' bytes padding added after data member 'WMOGroup::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wmo.h(111,9): warning C4820: 'WMOInstance': '4' bytes padding added after data member 'WMOInstance::doodadset'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(28,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::ok'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(35,10): warning C4820: 'Model': '7' bytes padding added after data member 'Model::outfilename'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\model.h(46,13): warning C4820: 'ModelInstance': '4' bytes padding added after data member 'ModelInstance::sc'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(43,12): warning C4820: '<unnamed-tag>': '2' bytes padding added after data member '<unnamed-tag>::area_id'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(46,11): warning C4820: '<unnamed-tag>': '7' bytes padding added after data member '<unnamed-tag>::flag'
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4625: 'ADTFile': copy constructor was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\adtfile.h(92,7): warning C4626: 'ADTFile': assignment operator was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wdtfile.h(11,7): warning C4625: 'WDTFile': copy constructor was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\wdtfile.h(11,7): warning C4626: 'WDTFile': assignment operator was implicitly defined as deleted
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\dbcfile.h(29,6): warning C5267: definition of implicit assignment operator for 'DBCFile' is deprecated because it has a user-provided destructor
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\dbcfile.h(64,18):
+14>      implicit assignment operator for 'DBCFile' first required here
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(71,21): warning C4242: '=': conversion from 'int' to 'char', possible loss of data
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(102,72): warning C4242: '=': conversion from 'unsigned int' to 'uint16', possible loss of data
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(234,53): warning C4365: 'argument': conversion from 'int' to 'uint32', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(234,50): warning C4365: 'argument': conversion from 'int' to 'uint32', signed/unsigned mismatch
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(382,10): warning C4459: declaration of 'preciseVectorData' hides global declaration
+14>      F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(53,6):
+14>      see declaration of 'preciseVectorData'
+14>F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(494,29): warning C4800: Implicit conversion from 'int' to bool. Possible information loss
+14>      F:\GITHUB\WorldOfImmortality\src\tools\vmap3_extractor\vmapexport.cpp(494,29):
+14>      consider using explicit cast or comparison to 0 to avoid this warning
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1017,38):
+14>      the template instantiation context (the oldest one first) is
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1705,105):
+14>          see reference to class template instantiation 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>' being compiled
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(578,38):
+14>          while compiling class template member function '_InIt std::num_get<wchar_t,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,double &) const'
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>              C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(612,16):
+14>              see the first reference to 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get' in 'std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::do_get'
+14>          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(583,13):
+14>          see reference to function template instantiation 'std::_Num_get_parse_result std::num_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>>::_Parse_fp_with_locale<0>(char *const ,const int,_InIt &,_InIt &,const std::locale &)' being compiled
+14>          with
+14>          [
+14>              _InIt=std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t>>
+14>          ]
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1018,43): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1019,60): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+14>C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xlocnum(1022,38): error C2065: 'PTRDIFF_MAX': undeclared identifier
+14>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/tools/vmap3_extractor/vmapexport.cpp')
+12>viosslfactories.obj : error LNK2019: unresolved external symbol OPENSSL_init_ssl referenced in function check_ssl_init
+12>F:\ImmortalityCore\BUILD\bin\Release\libmysql.dll : fatal error LNK1120: 4 unresolved externals
+10>  ItemEnchantmentMgr.cpp
+10>  Object.cpp
+10>  ObjectPosSelector.cpp
+9>  boss_salramm.cpp
+9>  boss_meathook.cpp
+9>  boss_mal_ganis.cpp
+9>  boss_epoch.cpp
+9>  culling_of_stratholme.cpp
+9>  instance_culling_of_stratholme.cpp
+9>  instance_dark_portal.cpp
+9>  boss_chrono_lord_deja.cpp
+9>  dark_portal.cpp
+10>  UpdateData.cpp
+10>  Pet.cpp
+9>  boss_aeonus.cpp
+9>  boss_temporus.cpp
+9>  boss_kelris.cpp
+16>  VMapAssembler.cpp
+9>  instance_blackfathom_deeps.cpp
+9>  boss_gelihast.cpp
+10>  Player.cpp
+9>  blackfathom_deeps.cpp
+9>  boss_aku_mai.cpp
+10>  SocialMgr.cpp
+9>  azuremyst_isle.cpp
+9>  orgrimmar.cpp
+9>  desolace.cpp
+9>  feralas.cpp
+9>  boss_princess_theradras.cpp
+9>  boss_landslide.cpp
+9>  boss_celebras_the_cursed.cpp
+10>  Totem.cpp
+15>  shared.vcxproj -> F:\ImmortalityCore\BUILD\src\server\shared\Release\shared.lib
+10>  Transport.cpp
+10>  StatSystem.cpp
+10>  Unit.cpp
+10>  Vehicle.cpp
+10>  GameEventMgr.cpp
+10>  ObjectAccessor.cpp
+10>  ObjectMgr.cpp
+10>  GridStates.cpp
+10>  GridNotifiers.cpp
+9>  boss_noxxion.cpp
+9>  boss_fankriss.cpp
+9>  boss_huhuran.cpp
+9>  instance_temple_of_ahnqiraj.cpp
+9>  mob_anubisath_sentinel.cpp
+9>  boss_viscidus.cpp
+9>  boss_twinemperors.cpp
+9>  boss_sartura.cpp
+9>  boss_cthun.cpp
+9>  boss_skeram.cpp
+9>  boss_ouro.cpp
+9>  boss_bug_trio.cpp
+9>  darkshore.cpp
+9>  boss_buru.cpp
+9>  instance_ruins_of_ahnqiraj.cpp
+9>  boss_rajaxx.cpp
+9>  boss_ossirian.cpp
+9>  boss_ayamiss.cpp
+9>  boss_moam.cpp
+9>  boss_kurinnaxx.cpp
+9>  mulgore.cpp
+9>  bloodmyst_isle.cpp
+9>  thunder_bluff.cpp
+9>  azshara.cpp
+9>  instance_razorfen_kraul.cpp
+9>  razorfen_kraul.cpp
+9>  the_barrens.cpp
+9>  ungoro_crater.cpp
+16>  vmap3assembler.vcxproj -> F:\ImmortalityCore\BUILD\bin\Release\vmap3assembler.exe
+9>  instance_wailing_caverns.cpp
+9>  wailing_caverns.cpp
+9>  durotar.cpp
+9>  felwood.cpp
+9>  boss_azuregos.cpp
+9>  tanaris.cpp
+9>  dustwallow_marsh.cpp
+9>  winterspring.cpp
+9>  thousand_needles.cpp
+9>  ashenvale.cpp
+9>  teldrassil.cpp
+9>  boss_onyxia.cpp
+9>  instance_onyxias_lair.cpp
+9>  nagrand.cpp
+9>  instance_magtheridons_lair.cpp
+9>  boss_magtheridon.cpp
+9>  instance_hellfire_ramparts.cpp
+9>  boss_omor_the_unscarred.cpp
+9>  boss_watchkeeper_gargolmar.cpp
+9>  boss_vazruden_the_herald.cpp
+9>  boss_the_maker.cpp
+9>  boss_kelidan_the_breaker.cpp
+9>  instance_blood_furnace.cpp
+9>  boss_broggok.cpp
+9>  boss_warchief_kargath_bladefist.cpp
+9>  boss_nethekurse.cpp
+9>  instance_shattered_halls.cpp
+9>  boss_warbringer_omrogg.cpp
+9>  boss_mekgineer_steamrigger.cpp
+9>  instance_steam_vault.cpp
+9>  boss_hydromancer_thespia.cpp
+9>  boss_warlord_kalithresh.cpp
+9>  boss_hydross_the_unstable.cpp
+9>  boss_fathomlord_karathress.cpp
+9>  instance_serpent_shrine.cpp
+9>  boss_lady_vashj.cpp
+9>  boss_leotheras_the_blind.cpp
+9>  boss_lurker_below.cpp
+9>  boss_morogrim_tidewalker.cpp
+9>  boss_hungarfen.cpp
+9>  boss_the_black_stalker.cpp
+9>  shattrath_city.cpp
+9>  boss_pathaleon_the_calculator.cpp
+9>  boss_nethermancer_sepethrea.cpp
+9>  boss_gatewatcher_gyrokill.cpp
+9>  instance_mechanar.cpp
+9>  boss_gatewatcher_ironhand.cpp
+9>  instance_the_eye.cpp
+9>  boss_void_reaver.cpp
+9>  boss_astromancer.cpp
+9>  boss_alar.cpp
+9>  boss_kaelthas.cpp
+9>  the_eye.cpp
+9>  boss_high_botanist_freywinn.cpp
+9>  boss_warp_splinter.cpp
+9>  boss_laj.cpp
+9>  boss_harbinger_skyriss.cpp
+9>  instance_arcatraz.cpp
+9>  arcatraz.cpp
+9>  boss_shirrak_the_dead_watcher.cpp
+9>  boss_exarch_maladaar.cpp
+9>  boss_pandemonius.cpp
+17>------ Build started: Project: authserver, Configuration: Release x64 ------
+10>  ObjectGridLoader.cpp
+10>  Group.cpp
+9>  boss_nexusprince_shaffar.cpp
+9>  boss_tailonking_ikiss.cpp
+9>  boss_darkweaver_syth.cpp
+9>  instance_sethekk_halls.cpp
+9>  boss_murmur.cpp
+9>  boss_ambassador_hellmaw.cpp
+9>  boss_blackheart_the_inciter.cpp
+9>  instance_shadow_labyrinth.cpp
+9>  boss_grandmaster_vorpil.cpp
+9>  boss_doomwalker.cpp
+9>  terokkar_forest.cpp
+9>  hellfire_peninsula.cpp
+9>  boss_doomlord_kazzak.cpp
+9>  boss_teron_gorefiend.cpp
+9>  illidari_council.cpp
+9>  boss_shade_of_akama.cpp
+9>  boss_supremus.cpp
+9>  black_temple.cpp
+9>  boss_mother_shahraz.cpp
+9>  instance_black_temple.cpp
+9>  boss_reliquary_of_souls.cpp
+9>  boss_warlord_najentus.cpp
+9>  boss_bloodboil.cpp
+9>  boss_illidan.cpp
+9>  shadowmoon_valley.cpp
+9>  blades_edge_mountains.cpp
+9>  boss_high_king_maulgar.cpp
+9>  boss_gruul.cpp
+9>  instance_gruuls_lair.cpp
+9>  netherstorm.cpp
+9>  zangarmarsh.cpp
+9>  teleNPC_vote.cpp
+9>  teleNPCfun_vote.cpp
+9>  isle_of_conquest.cpp
+9>  storm_peaks.cpp
+9>  instance_halls_of_lightning.cpp
+9>  boss_bjarngrim.cpp
+9>  boss_ionar.cpp
+9>  boss_volkhan.cpp
+9>  boss_loken.cpp
+9>  boss_general_vezax.cpp
+9>  ulduar_teleporter.cpp
+9>  boss_thorim.cpp
+9>  boss_ignis.cpp
+9>  boss_algalon.cpp
+9>  instance_ulduar.cpp
+9>  boss_auriaya.cpp
+9>  boss_yoggsaron.cpp
+10>  GroupReference.cpp
+9>  boss_hodir.cpp
+10>  Guild.cpp
+9>  boss_assembly_of_iron.cpp
+9>  boss_flame_leviathan.cpp
+10>  InstanceSaveMgr.cpp
+10>  InstanceScript.cpp
+9>  boss_xt002.cpp
+9>  boss_mimiron.cpp
+9>  boss_freya.cpp
+9>  boss_razorscale.cpp
+9>  boss_kologarn.cpp
+9>  boss_krystallus.cpp
+9>  instance_halls_of_stone.cpp
+9>  boss_maiden_of_grief.cpp
+9>  boss_sjonnir.cpp
+9>  halls_of_stone.cpp
+9>  instance_obsidian_sanctum.cpp
+9>  boss_sartharion.cpp
+9>  boss_baltharus.cpp
+9>  boss_halion.cpp
+9>  boss_ragefire.cpp
+9>  boss_zarithrian.cpp
+9>  instance_ruby_sanctum.cpp
+9>  boss_falric.cpp
+9>  instance_halls_of_reflection.cpp
+9>  halls_of_reflection.cpp
+9>  boss_marwyn.cpp
+9>  boss_forgemaster_garfrost.cpp
+9>  boss_krickandick.cpp
+9>  pit_of_saron.cpp
+9>  boss_scourgelord_tyrannus.cpp
+9>  instance_pit_of_saron.cpp
+9>  forge_of_souls.cpp
+9>  boss_bronjahm.cpp
+9>  instance_forge_of_souls.cpp
+10>  LootMgr.cpp
+10>  Mail.cpp
+10>  Map.cpp
+10>  MapInstanced.cpp
+10>  MapManager.cpp
+9>  boss_devourer_of_souls.cpp
+9>  boss_malygos.cpp
+10>  MapUpdater.cpp
+9>  instance_eye_of_eternity.cpp
+10>  DestinationHolder.cpp
+9>  boss_eregos.cpp
+9>  boss_drakos.cpp
+9>  boss_varos.cpp
+10>  FollowerReference.cpp
+10>  MotionMaster.cpp
+9>  boss_urom.cpp
+9>  oculus.cpp
+10>  MovementGenerator.cpp
+9>  instance_oculus.cpp
+10>  ConfusedMovementGenerator.cpp
+9>  commander_kolurg.cpp
+9>  commander_stoutbeard.cpp
+9>  boss_ormorok.cpp
+9>  boss_magus_telestra.cpp
+9>  instance_nexus.cpp
+10>  FleeingMovementGenerator.cpp
+9>  boss_keristrasza.cpp
+10>  HomeMovementGenerator.cpp
+10>  IdleMovementGenerator.cpp
+9>  boss_anomalus.cpp
+9>  boss_anubarak_trial.cpp
+9>  boss_faction_champions.cpp
+9>  boss_lord_jaraxxus.cpp
+9>  boss_northrend_beasts.cpp
+9>  trial_of_the_crusader.cpp
+10>  PointMovementGenerator.cpp
+9>  boss_twin_valkyr.cpp
+10>  RandomMovementGenerator.cpp
+10>  TargetedMovementGenerator.cpp
+9>  instance_trial_of_the_crusader.cpp
+9>  trial_of_the_champion.cpp
+10>  WaypointMovementGenerator.cpp
+9>  boss_grand_champions.cpp
+10>  WaypointManager.cpp
+9>  boss_black_knight.cpp
+9>  instance_trial_of_the_champion.cpp
+9>  boss_argent_challenge.cpp
+9>  boss_loatheb.cpp
+10>  OutdoorPvP.cpp
+9>  boss_anubrekhan.cpp
+10>  OutdoorPvPMgr.cpp
+9>  boss_maexxna.cpp
+10>  PoolMgr.cpp
+17>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/authserver/CMakeLists.txt
+9>  boss_patchwerk.cpp
+9>  boss_gothik.cpp
+10>  QuestDef.cpp
+9>  boss_faerlina.cpp
+10>  ReputationMgr.cpp
+9>  boss_gluth.cpp
+9>  boss_four_horsemen.cpp
+9>  boss_kelthuzad.cpp
+9>  boss_heigan.cpp
+9>  boss_thaddius.cpp
+9>  boss_razuvious.cpp
+9>  boss_sapphiron.cpp
+9>  instance_naxxramas.cpp
+10>  MapScripts.cpp
+9>  boss_grobbulus.cpp
+10>  ScriptLoader.cpp
+9>  boss_noth.cpp
+9>  crystalsong_forest.cpp
+10>  ScriptMgr.cpp
+9>  boss_archavon.cpp
+9>  boss_koralon.cpp
+9>  instance_vault_of_archavon.cpp
+9>  boss_emalon.cpp
+9>  boss_toravon.cpp
+10>  ScriptSystem.cpp
+9>  sholazar_basin.cpp
+9>  boss_palehoof.cpp
+9>  boss_svala.cpp
+9>  instance_pinnacle.cpp
+9>  boss_ymiron.cpp
+9>  boss_skadi.cpp
+9>  boss_ingvar_the_plunderer.cpp
+9>  boss_skarvald_dalronn.cpp
+9>  instance_utgarde_keep.cpp
+9>  boss_keleseth.cpp
+9>  utgarde_keep.cpp
+9>  dragonblight.cpp
+9>  grizzly_hills.cpp
+9>  instance_azjol_nerub.cpp
+9>  boss_krikthir_the_gatewatcher.cpp
+9>  boss_hadronox.cpp
+9>  boss_anubarak.cpp
+9>  boss_herald_volazj.cpp
+9>  boss_prince_taldaram.cpp
+9>  instance_ahnkahet.cpp
+9>  boss_jedoga_shadowseeker.cpp
+9>  boss_elder_nadox.cpp
+9>  boss_amanitar.cpp
+10>  AddonHandler.cpp
+10>  ArenaTeamHandler.cpp
+9>  boss_zuramat.cpp
+9>  instance_violet_hold.cpp
+9>  boss_lavanthor.cpp
+9>  boss_cyanigosa.cpp
+9>  boss_ichoron.cpp
+9>  boss_moragg.cpp
+9>  boss_xevozz.cpp
+9>  boss_erekem.cpp
+9>  violet_hold.cpp
+10>  AuctionHouseHandler.cpp
+9>  instance_icecrown_citadel.cpp
+9>  icecrown_citadel.cpp
+10>  AuthHandler.cpp
+9>  icecrown_citadel_teleport.cpp
+10>  BattleGroundHandler.cpp
+9>  boss_lord_marrowgar.cpp
+10>  CalendarHandler.cpp
+9>  boss_lady_deathwhisper.cpp
+10>  ChannelHandler.cpp
+9>  boss_deathbringer_saurfang.cpp
+10>  CharacterHandler.cpp
+9>  boss_festergut.cpp
+9>  boss_rotface.cpp
+10>  ChatHandler.cpp
+10>  CombatHandler.cpp
+9>  boss_professor_putricide.cpp
+10>  DuelHandler.cpp
+9>  boss_blood_prince_council.cpp
+10>  GroupHandler.cpp
+10>  GuildHandler.cpp
+10>  ItemHandler.cpp
+9>  boss_blood_queen_lana_thel.cpp
+17>  authPCH.cpp
+9>  boss_sindragosa.cpp
+9>  zuldrak.cpp
+9>  icecrown.cpp
+9>  boss_slad_ran.cpp
+10>  LFGHandler.cpp
+9>  instance_gundrak.cpp
+10>  LootHandler.cpp
+10>  MailHandler.cpp
+9>  boss_drakkari_colossus.cpp
+9>  boss_gal_darah.cpp
+10>  MiscHandler.cpp
+9>  boss_moorabi.cpp
+9>  boss_eck.cpp
+10>  MovementHandler.cpp
+9>  borean_tundra.cpp
+10>  NPCHandler.cpp
+9>  howling_fjord.cpp
+9>  dalaran.cpp
+9>  boss_trollgore.cpp
+9>  instance_drak_tharon_keep.cpp
+9>  boss_novos.cpp
+10>  PetHandler.cpp
+9>  boss_tharon_ja.cpp
+9>  boss_dred.cpp
+10>  PetitionsHandler.cpp
+10>  QueryHandler.cpp
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302: 'reinterpret_cast': truncation from 'TYPE' to 'unsigned long'
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         with
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         [
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:             TYPE=ACE_Future_Rep<QueryResult> *
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         ]
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/Protocol/Handlers/QueryHandler.cpp')
+10>      F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10):
+10>      the template instantiation context (the oldest one first) is
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Future_Set.cpp(61,1):
+10>          while compiling class template member function 'int ACE_Future_Set<QueryResult>::insert(ACE_Future<QueryResult> &)'
+10>              F:\GITHUB\WorldOfImmortality\src\server\game\Server\Protocol\Handlers\QueryHandler.cpp(78,32):
+10>              see the first reference to 'ACE_Future_Set<QueryResult>::insert' in 'WorldSession::SendNameQueryOpcodeFromDB'
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(103,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::bind(const EXT_ID &,const INT_ID &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *,
+10>              INT_ID=ACE_Future_Holder<QueryResult> *
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(94,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::bind_i(const EXT_ID &,const INT_ID &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *,
+10>              INT_ID=ACE_Future_Holder<QueryResult> *
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.cpp(226,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::bind_i(const EXT_ID &,const INT_ID &,ACE_Hash_Map_Entry<EXT_ID,INT_ID> *&)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *,
+10>              INT_ID=ACE_Future_Holder<QueryResult> *
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.cpp(312,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::shared_find(const EXT_ID &,ACE_Hash_Map_Entry<EXT_ID,INT_ID> *&,size_t &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *,
+10>              INT_ID=ACE_Future_Holder<QueryResult> *
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(80,1):
+10>          while compiling class template member function 'u_long ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::hash(const EXT_ID &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(15,1):
+10>          while compiling class template member function 'unsigned long ACE_Pointer_Hash<ACE_Future_Rep<T> *>::operator ()(TYPE) const'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              TYPE=ACE_Future_Rep<QueryResult> *
+10>          ]
+10>  QuestHandler.cpp
+10>  SkillHandler.cpp
+10>  SpellHandler.cpp
+10>  TaxiHandler.cpp
+10>  TicketHandler.cpp
+10>  TradeHandler.cpp
+10>  VehicleHandler.cpp
+10>  VoiceChatHandler.cpp
+10>  Opcodes.cpp
+10>  WorldLog.cpp
+10>  WorldSession.cpp
+10>  WorldSocket.cpp
+10>  WorldSocketMgr.cpp
+10>  SkillDiscovery.cpp
+10>  SkillExtraItems.cpp
+10>  SpellAuraEffects.cpp
+10>F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSocket.cpp(165,22): warning C4311: 'type cast': pointer truncation from 'ACE_HANDLE' to 'uint32'
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/WorldSocket.cpp')
+10>F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSocket.cpp(165,22): warning C4302: 'type cast': truncation from 'ACE_HANDLE' to 'uint32'
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/WorldSocket.cpp')
+10>F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSocket.cpp(692,22): warning C4311: 'type cast': pointer truncation from 'ACE_HANDLE' to 'uint32'
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/WorldSocket.cpp')
+10>F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSocket.cpp(692,22): warning C4302: 'type cast': truncation from 'ACE_HANDLE' to 'uint32'
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/WorldSocket.cpp')
+17>  AuthCodes.cpp
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302: 'reinterpret_cast': truncation from 'TYPE' to 'unsigned long'
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         with
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         [
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:             TYPE=ACE_Future_Rep<QueryResult> *
+10>F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10): warning C4302:         ]
+10>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/game/Server/WorldSession.cpp')
+10>      F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(22,10):
+10>      the template instantiation context (the oldest one first) is
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Future_Set.cpp(18,3):
+10>          while compiling class template member function 'ACE_Future_Set<QueryResult>::ACE_Future_Set(ACE_Message_Queue<ACE_MT_SYNCH> *)'
+10>              F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSession.cpp(96,1):
+10>              see the first reference to 'ACE_Future_Set<QueryResult>::ACE_Future_Set' in 'WorldSession::WorldSession'
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(26,3):
+10>          while compiling class template member function 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::ACE_Hash_Map_Manager_Ex(ACE_Allocator *,ACE_Allocator *)'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.cpp(131,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::open(size_t,ACE_Allocator *,ACE_Allocator *)'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.cpp(279,1):
+10>          while compiling class template member function 'int ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind_i(const EXT_ID &,INT_ID &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *,
+10>              INT_ID=ACE_Future_Holder<QueryResult> *
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(155,3):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind_i' in 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind_i'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(192,3):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind_i' in 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Future_Set.cpp(125,32):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::unbind' in 'ACE_Future_Set<QueryResult>::next_readable'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSession.cpp(951,9):
+10>              see the first reference to 'ACE_Future_Set<QueryResult>::next_readable' in 'WorldSession::ProcessQueryCallbacks'
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(80,1):
+10>          while compiling class template member function 'u_long ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::hash(const EXT_ID &)'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              EXT_ID=ACE_Future_Rep<QueryResult> *
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.cpp(319,7):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::hash' in 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::shared_find'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(210,3):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::shared_find' in 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::find_i'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Hash_Map_Manager_T.inl(238,3):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::find_i' in 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::find'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Future_Set.cpp(121,3):
+10>              see the first reference to 'ACE_Hash_Map_Manager_Ex<ACE_Future_Rep<T> *,ACE_Future_Holder<T> *,ACE_Pointer_Hash<ACE_Future_Rep<T> *>,ACE_Equal_To<ACE_Future_Rep<T> *>,ACE_Null_Mutex>::find' in 'ACE_Future_Set<QueryResult>::next_readable'
+10>          with
+10>          [
+10>              T=QueryResult
+10>          ]
+10>              F:\GITHUB\WorldOfImmortality\src\server\game\Server\WorldSession.cpp(951,9):
+10>              see the first reference to 'ACE_Future_Set<QueryResult>::next_readable' in 'WorldSession::ProcessQueryCallbacks'
+10>          F:\GITHUB\WorldOfImmortality\dep\acelite\ace\Functor_T.inl(15,1):
+10>          while compiling class template member function 'unsigned long ACE_Pointer_Hash<ACE_Future_Rep<T> *>::operator ()(TYPE) const'
+10>          with
+10>          [
+10>              T=QueryResult,
+10>              TYPE=ACE_Future_Rep<QueryResult> *
+10>          ]
+17>  RealmList.cpp
+10>  SpellAuras.cpp
+17>  AuthSocket.cpp
+17>  RealmSocket.cpp
+17>  Main.cpp
+17>  WheatyExceptionReport.cpp
+17>F:\GITHUB\WorldOfImmortality\src\server\shared\Debugging\WheatyExceptionReport.cpp(975,57): warning C4477: 'sprintf' : format string '%.31s' requires an argument of type 'char *', but variadic argument 1 has type 'DWORD'
+17>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/shared/Debugging/WheatyExceptionReport.cpp')
+17>F:\GITHUB\WorldOfImmortality\src\server\shared\Debugging\WheatyExceptionReport.cpp(975,57): warning C4313: 'sprintf': '%s' in format string conflicts with argument 1 of type 'DWORD'
+17>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/shared/Debugging/WheatyExceptionReport.cpp')
+10>  Spell.cpp
+10>  SpellEffects.cpp
+9>  scripts.vcxproj -> F:\ImmortalityCore\BUILD\src\server\scripts\Release\scripts.lib
+10>  SpellMgr.cpp
+10>  SpellScript.cpp
+10>  CreatureTextMgr.cpp
+10>  CharacterDatabaseCleaner.cpp
+10>  PlayerDump.cpp
+10>  TicketMgr.cpp
+10>  Weather.cpp
+10>  WeatherMgr.cpp
+17>Main.obj : error LNK2019: unresolved external symbol OpenSSL_version referenced in function "int __cdecl ace_main_i(int,char * * const)" (?ace_main_i@@YAHHQEAPEAD@Z)
+17>shared.lib(BigNumber.obj) : error LNK2019: unresolved external symbol BN_is_zero referenced in function "public: bool __cdecl BigNumber::isZero(void)const " (?isZero@BigNumber@@QEBA_NXZ)
+17>F:\ImmortalityCore\BUILD\bin\Release\authserver.exe : fatal error LNK1120: 2 unresolved externals
+10>  World.cpp
+10>  game.vcxproj -> F:\ImmortalityCore\BUILD\src\server\game\Release\game.lib
+18>------ Build started: Project: worldserver, Configuration: Release x64 ------
+18>  Building Custom Rule F:/GITHUB/WorldOfImmortality/src/server/worldserver/CMakeLists.txt
+18>  worldPCH.cpp
+18>  CliRunnable.cpp
+18>  RARunnable.cpp
+18>  RASocket.cpp
+18>  TCSoap.cpp
+18>  WorldRunnable.cpp
+18>  Main.cpp
+18>  Master.cpp
+18>  WheatyExceptionReport.cpp
+18>F:\GITHUB\WorldOfImmortality\src\server\shared\Debugging\WheatyExceptionReport.cpp(975,57): warning C4477: 'sprintf' : format string '%.31s' requires an argument of type 'char *', but variadic argument 1 has type 'DWORD'
+18>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/shared/Debugging/WheatyExceptionReport.cpp')
+18>F:\GITHUB\WorldOfImmortality\src\server\shared\Debugging\WheatyExceptionReport.cpp(975,57): warning C4313: 'sprintf': '%s' in format string conflicts with argument 1 of type 'DWORD'
+18>  (compiling source file '../../../../../GITHUB/WorldOfImmortality/src/server/shared/Debugging/WheatyExceptionReport.cpp')
+18>Main.obj : error LNK2019: unresolved external symbol OpenSSL_version referenced in function "int __cdecl ace_main_i(int,char * * const)" (?ace_main_i@@YAHHQEAPEAD@Z)
+18>shared.lib(BigNumber.obj) : error LNK2019: unresolved external symbol BN_is_zero referenced in function "public: bool __cdecl BigNumber::isZero(void)const " (?isZero@BigNumber@@QEBA_NXZ)
+18>shared.lib(HMACSHA1.obj) : error LNK2019: unresolved external symbol HMAC_CTX_new referenced in function "public: __cdecl HmacHash::HmacHash(unsigned int,unsigned char *)" (??0HmacHash@@QEAA@IPEAE@Z)
+18>shared.lib(HMACSHA1.obj) : error LNK2019: unresolved external symbol HMAC_CTX_free referenced in function "public: __cdecl HmacHash::~HmacHash(void)" (??1HmacHash@@QEAA@XZ)
+18>F:\ImmortalityCore\BUILD\bin\Release\worldserver.exe : fatal error LNK1120: 4 unresolved externals
+19>------ Build started: Project: ALL_BUILD, Configuration: Release x64 ------
+19>  Building Custom Rule F:/GITHUB/WorldOfImmortality/CMakeLists.txt
+========== Build: 14 succeeded, 5 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 2:46 PM and took 05:28.849 minutes ==========
