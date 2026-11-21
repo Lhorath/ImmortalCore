@@ -12,11 +12,12 @@
  * come from the `voting_points` table (id = account id).
  * Player::HasVoted() / Player::GetGuildHouseMask() were custom core code that stock
  * TrinityCore does not have, so they are re-implemented as SQL in namespace TeleVote.
- * Guild house mask comes from `guild_house_masks` in the characters database
- * (guid = guild id, phasemask = the guild's phase; > 1 means the guild owns a house).
- *
- * NOTE: the old core also applied that phase mask to the player on map 37. This script only
- * uses it to decide who sees the Guild House menu - it does not set any phase itself.
+ * Guild houses come from two tables in the characters database:
+ *   guild_house_masks (guid = guild id, phasemask = the guild's house phase; > 1 = owns a house)
+ *   guild_houses      (guildid, mapid, x, y, z, o = where the guild's house is)
+ * "Guild House" teleports the player there and adds the guild's phase mask to the player's
+ * phases so the house NPCs/objects are visible. Guilds that have a phase mask but no row in
+ * guild_houses are sent to the default guild hall (map 37).
  */
 
 #include "ScriptMgr.h"
@@ -41,7 +42,11 @@ namespace TeleVote
     constexpr uint32 VOTE_VALID_SECONDS     = 12 * 3600;
 
     constexpr char const* MSG_NOT_VOTED      = "You have not voted yet. Vote to unlock dungeons, player tools, PvP and the guild house.";
-    constexpr char const* MSG_NO_GUILD_HOUSE = "Your guild does not own a guild house.";
+    constexpr char const* MSG_NO_GUILD_HOUSE = "Your Guild Doesn't Own a Guild House, Contact a GM or visit worldofimmortality.com to find out how to obtain one. (You Must Be the Guild Leader to Request a Guild House)";
+
+    // used when a guild has a phase mask but no row in guild_houses (the old "Guild Hall")
+    constexpr uint32 DEFAULT_HOUSE_MAP = 37;
+    constexpr float  DEFAULT_HOUSE_X = 1009.9f, DEFAULT_HOUSE_Y = 284.2f, DEFAULT_HOUSE_Z = 328.96f, DEFAULT_HOUSE_O = 0.17f;
 
     // voting (auth DB): user_ip = voter's IP address, time = unix time of that IP's last vote
     #define TELEVOTE_SQL_HAS_VOTED    "SELECT 1 FROM `voting` WHERE `user_ip` = '{}' AND `time` > UNIX_TIMESTAMP() - {} LIMIT 1"
@@ -50,8 +55,9 @@ namespace TeleVote
     #define TELEVOTE_SQL_HAS_POINTS   "SELECT 1 FROM `voting_points` WHERE `id` = {} AND `points` >= {} LIMIT 1"
     #define TELEVOTE_SQL_SPEND_POINTS "UPDATE `voting_points` SET `points` = `points` - {} WHERE `id` = {} AND `points` >= {}"
 
-    // guild_house_masks (characters DB): guid = guild id, phasemask = guild house phase (> 1 = has a house)
-    #define TELEVOTE_SQL_GUILD_MASK   "SELECT `phasemask` FROM `guild_house_masks` WHERE `guid` = {}"
+    // characters DB: guild_house_masks (guid = guild id, phasemask = house phase, > 1 = owns a house)
+    //                guild_houses (guildid, mapid, x, y, z, o = house location, may be missing)
+    #define TELEVOTE_SQL_GUILD_HOUSE  "SELECT m.`phasemask`, h.`mapid`, h.`x`, h.`y`, h.`z`, h.`o` FROM `guild_house_masks` m LEFT JOIN `guild_houses` h ON h.`guildid` = m.`guid` WHERE m.`guid` = {} LIMIT 1"
 
     bool HasVoted(Player* player)
     {
@@ -76,13 +82,46 @@ namespace TeleVote
         return true;
     }
 
-    uint32 GetGuildHouseMask(Player* player)
+    struct GuildHouse
     {
-        if (!player->GetGuildId())
-            return 0;
+        uint32 mapId;
+        float x, y, z, o;
+        uint32 phaseMask;
+    };
 
-        QueryResult result = CharacterDatabase.PQuery(TELEVOTE_SQL_GUILD_MASK, uint32(player->GetGuildId()));
-        return result ? (*result)[0].GetUInt32() : 0;
+    // true if the player's guild owns a guild house (has a phase mask > 1)
+    bool GetGuildHouse(Player* player, GuildHouse& house)
+    {
+        uint32 guildId = player->GetGuildId();
+        if (!guildId)
+            return false;
+
+        QueryResult result = CharacterDatabase.PQuery(TELEVOTE_SQL_GUILD_HOUSE, guildId);
+        if (!result)
+            return false;
+
+        Field* fields = result->Fetch();
+        house.phaseMask = fields[0].GetUInt32();
+        if (house.phaseMask <= 1)
+            return false;
+
+        if (fields[1].IsNull()) // phase mask but no location row: default guild hall
+        {
+            house.mapId = DEFAULT_HOUSE_MAP;
+            house.x = DEFAULT_HOUSE_X;
+            house.y = DEFAULT_HOUSE_Y;
+            house.z = DEFAULT_HOUSE_Z;
+            house.o = DEFAULT_HOUSE_O;
+        }
+        else
+        {
+            house.mapId = fields[1].GetUInt16();
+            house.x = fields[2].GetFloat();
+            house.y = fields[3].GetFloat();
+            house.z = fields[4].GetFloat();
+            house.o = fields[5].GetFloat();
+        }
+        return true;
     }
 }
 
@@ -167,10 +206,6 @@ static constexpr TeleLocation TeleLocations[] =
     {  9050, 571, 8976.24f, -1281.33f, 1059.01f, 0.58f }, // Ulduar
     {  9055, 571, 5679.82f, 486.80f, 652.40f, 4.08f }, // Violet Hold
     {  9060, 571, 5440.11f, 2840.76f, 420.42f, 0.01f }, // Vault of Archavon
-    // ---- Guild house ----
-    { 10035,  37, 1009.9f, 284.2f, 328.96f, 0.17f }, // Guild Hall
-    { 10040,  37, 779.7f, 152.2f, 269.5f, 1.770f }, // Guild Arena
-    { 10045,  37, 486.89f, 58.80f, 262.38f, 3.875f }, // Summit Course
 };
 
 static TeleLocation const* FindLocation(uint32 action)
@@ -238,10 +273,29 @@ private:
             AddGossipItemFor(player, GOSSIP_ICON_BATTLE, alliance
                 ? "|TInterface\\Icons\\Achievement_PVP_H_16:35:35:-22:0|t|cff0000ffAlliance vs Horde PvP|r"
                 : "|TInterface\\Icons\\Achievement_PVP_A_16:35:35:-22:0|t|cff0000ffAlliance vs Horde PvP|r", GOSSIP_SENDER_MAIN, 3500);
-            AddGossipItemFor(player, GOSSIP_ICON_BATTLE, "|TInterface\\Icons\\INV_Misc_GroupLooking:35:35:-22:0|t|cff0000ffGuild House Menu|r", GOSSIP_SENDER_MAIN, 10010);
+            AddGossipItemFor(player, GOSSIP_ICON_BATTLE, "|TInterface\\Icons\\INV_Misc_GroupLooking:35:35:-22:0|t|cff0000ffGuild House|r", GOSSIP_SENDER_MAIN, 10010);
         }
 
         SendGossipMenuFor(player, DEFAULT_GOSSIP_MESSAGE, me->GetGUID());
+    }
+
+    void EnterGuildHouse(Player* player)
+    {
+        CloseGossipMenuFor(player);
+
+        TeleVote::GuildHouse house{};
+        if (!TeleVote::GetGuildHouse(player, house))
+        {
+            me->Say(TeleVote::MSG_NO_GUILD_HOUSE, LANG_UNIVERSAL, player);
+            return;
+        }
+
+        // add the guild's phase to the phases the player already has, so the house is visible
+        uint32 phase = player->GetPhaseMask();
+        if ((phase & house.phaseMask) != house.phaseMask)
+            player->SetPhaseMask(phase | house.phaseMask, true);
+
+        player->TeleportTo(house.mapId, house.x, house.y, house.z, house.o);
     }
 
     void ResetInstanceLocks(Player* player)
@@ -438,20 +492,8 @@ private:
                 ShowMainMenu(player, TeleVote::HasVoted(player));
                 break;
 
-            case 10010: // Guild House Menu
-                if (TeleVote::GetGuildHouseMask(player) > 1)
-                {
-                    AddGossipItemFor(player, GOSSIP_ICON_INTERACT_2, "|TInterface\\Icons\\INV_Misc_GroupLooking:35:35:-22:0|t|cff0000ffGuild Hall|r", GOSSIP_SENDER_MAIN, 10035);
-                    AddGossipItemFor(player, GOSSIP_ICON_INTERACT_2, "|TInterface\\Icons\\INV_Misc_ArmorKit_17:35:35:-22:0|t|cff0000ffGuild Arena|r", GOSSIP_SENDER_MAIN, 10040);
-                    AddGossipItemFor(player, GOSSIP_ICON_INTERACT_2, "|TInterface\\Icons\\Achievement_Arena_2v2_7:35:35:-22:0|t|cff0000ffSummit Course|r", GOSSIP_SENDER_MAIN, 10045);
-                    AddGossipItemFor(player, GOSSIP_ICON_TALK, "|TInterface\\Icons\\Ability_Druid_Flightform:35:35:-22:0|t|cff0000ff<- [Main Menu]|r", GOSSIP_SENDER_MAIN, 5005);
-                    SendGossipMenuFor(player, DEFAULT_GOSSIP_MESSAGE, me->GetGUID());
-                }
-                else
-                {
-                    CloseGossipMenuFor(player);
-                    Tell(player, TeleVote::MSG_NO_GUILD_HOUSE);
-                }
+            case 10010: // Guild House
+                EnterGuildHouse(player);
                 break;
 
             ////////////////////////////////////////// Player tools //////////////////////////////////////////
