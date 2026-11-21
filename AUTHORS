@@ -1,4 +1,52 @@
-# List of AUTHORS who contributed over time to the TrinityCore project
+# ImmortalCore - Authors and Credits
+
+This file credits the people and projects behind **ImmortalCore**, the server core of
+**World of Immortality**, a custom World of Warcraft 3.3.5a private server.
+
+## Warning
+The code of ImmortalCore is shipped as it is without any form of warranty,
+and - except for third party libraries - licensed under the GPL 2.0,
+which you can read from the file "COPYING"
+
+## World of Immortality
+World of Immortality has been running since 2009.
+
+Copyright (c) 2009-2026 World of Immortality.
+
+### Original developers
+* Sero
+* Hellfrost
+* Abub
+* Brucey
+
+Thank you for building the server and its community from the very beginning.
+
+### ImmortalCore
+ImmortalCore is hosted at https://github.com/Lhorath/ImmortalCore
+
+Authorship of changes made to ImmortalCore is recorded for each commit within the git
+history of that repository. Everyone who has contributed to the server, whether through
+code, SQL, testing, bug reports, ideas or support, has helped make World of Immortality
+what it is. Thank you!
+
+*Please inform us, if you find somebody who is missing!*
+
+## Base code
+ImmortalCore is based on the **TrinityCore 3.3.5 branch as of November 18, 2026**.
+TrinityCore is itself derived from MaNGOS, so this project stands on the work of both
+communities. Their history and the contributors of the TrinityCore project are
+reproduced in full below.
+
+Thanks to everyone credited in the TrinityCore and MaNGOS sections that follow.
+
+---
+
+# TrinityCore Authors (upstream)
+
+The remainder of this file is the AUTHORS file of the TrinityCore project, reproduced
+unchanged from the 3.3.5 branch this project is based on. Within it, "this project"
+and "we" refer to TrinityCore.
+
 
 ## Warning
 The code of TrinityCore is shipped as it is without any form of warranty,
